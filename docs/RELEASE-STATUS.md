@@ -1,5 +1,7 @@
 # Release Status
 
+Published at `https://github.com/mmdmcy/to-subagent-or-not-to-subagent`.
+
 The release identity and license metadata are prepared for the public repository:
 
 - author: `mmdmcy`;
