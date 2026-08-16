@@ -1,0 +1,2370 @@
+{
+  "studyID": "cursor-opencode-cross-harness-2026-08-14",
+  "disclosure": "Sanitized per-run outcome fields. Raw streams, grader output, session IDs, and host paths are withheld.",
+  "runs": [
+    {
+      "runID": "outcome-cursor-grok-4.5-high-solo-t1",
+      "trial": 1,
+      "arm": "cursor-grok-4.5-high-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.5-high",
+      "agentWallSeconds": 89.311788727,
+      "verifiedWallSeconds": 89.86318357999995,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.5 High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-cursor-grok-4.6-high-solo-t1",
+      "trial": 1,
+      "arm": "cursor-grok-4.6-high-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.6-high",
+      "agentWallSeconds": 398.4036778509999,
+      "verifiedWallSeconds": 399.0143638089998,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.6 High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-cursor-grok-4.6-xhigh-solo-t1",
+      "trial": 1,
+      "arm": "cursor-grok-4.6-xhigh-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.6-xhigh",
+      "agentWallSeconds": 684.917530017,
+      "verifiedWallSeconds": 685.4930485909998,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 8,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 23,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.6 Extra High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-luna-max-bounded-t1",
+      "trial": 1,
+      "arm": "opencode-sol-xhigh-luna-max-bounded",
+      "harness": "opencode",
+      "architecture": "bounded-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 889.986837775,
+      "verifiedWallSeconds": 890.555696626,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 3,
+        "childSessionCount": 3,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-luna-orchestrator",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-luna-max-natural-t1",
+      "trial": 1,
+      "arm": "opencode-sol-xhigh-luna-max-natural",
+      "harness": "opencode",
+      "architecture": "production-like-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 1111.330231935,
+      "verifiedWallSeconds": 1111.9332634379998,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 3,
+        "childSessionCount": 3,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-natural",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "general",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "general",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "general",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-solo-t1",
+      "trial": 1,
+      "arm": "opencode-sol-xhigh-solo",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 553.4467403219999,
+      "verifiedWallSeconds": 554.0478827569997,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "cross-single",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-terra-medium-bounded-t1",
+      "trial": 1,
+      "arm": "opencode-sol-xhigh-terra-medium-bounded",
+      "harness": "opencode",
+      "architecture": "bounded-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 492.0657662310004,
+      "verifiedWallSeconds": 492.6798121240008,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 5,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 20,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 3,
+        "childSessionCount": 3,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-terra-orchestrator",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-cursor-grok-4.5-high-solo-t2",
+      "trial": 2,
+      "arm": "cursor-grok-4.5-high-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.5-high",
+      "agentWallSeconds": 89.46607396900002,
+      "verifiedWallSeconds": 90.03857005900005,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 8,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 23,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.5 High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-cursor-grok-4.6-high-solo-t2",
+      "trial": 2,
+      "arm": "cursor-grok-4.6-high-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.6-high",
+      "agentWallSeconds": 427.40300262499994,
+      "verifiedWallSeconds": 427.99499154100005,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.6 High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-cursor-grok-4.6-xhigh-solo-t2",
+      "trial": 2,
+      "arm": "cursor-grok-4.6-xhigh-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.6-xhigh",
+      "agentWallSeconds": 590.539427205,
+      "verifiedWallSeconds": 591.115981291,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.6 Extra High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-luna-max-bounded-t2",
+      "trial": 2,
+      "arm": "opencode-sol-xhigh-luna-max-bounded",
+      "harness": "opencode",
+      "architecture": "bounded-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 839.1383194480001,
+      "verifiedWallSeconds": 839.7312970070003,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 3,
+        "childSessionCount": 3,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-luna-orchestrator",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-luna-max-natural-t2",
+      "trial": 2,
+      "arm": "opencode-sol-xhigh-luna-max-natural",
+      "harness": "opencode",
+      "architecture": "production-like-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 1062.170086079,
+      "verifiedWallSeconds": 1062.766296732,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 2,
+        "childSessionCount": 2,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-natural",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "general",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "general",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-solo-t2",
+      "trial": 2,
+      "arm": "opencode-sol-xhigh-solo",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 400.99359212400003,
+      "verifiedWallSeconds": 401.61205358899997,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "cross-single",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-terra-medium-bounded-t2",
+      "trial": 2,
+      "arm": "opencode-sol-xhigh-terra-medium-bounded",
+      "harness": "opencode",
+      "architecture": "bounded-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 401.964964319,
+      "verifiedWallSeconds": 402.578161434,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 4,
+        "childSessionCount": 3,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-terra-orchestrator",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-cursor-grok-4.5-high-solo-t3",
+      "trial": 3,
+      "arm": "cursor-grok-4.5-high-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.5-high",
+      "agentWallSeconds": 122.09245518500032,
+      "verifiedWallSeconds": 122.63845123900008,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 8,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 23,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.5 High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-cursor-grok-4.6-high-solo-t3",
+      "trial": 3,
+      "arm": "cursor-grok-4.6-high-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.6-high",
+      "agentWallSeconds": 470.87972197000005,
+      "verifiedWallSeconds": 471.46921985800026,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 8,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 23,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.6 High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-cursor-grok-4.6-xhigh-solo-t3",
+      "trial": 3,
+      "arm": "cursor-grok-4.6-xhigh-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.6-xhigh",
+      "agentWallSeconds": 687.804370011,
+      "verifiedWallSeconds": 688.3808594029999,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.6 Extra High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-luna-max-bounded-t3",
+      "trial": 3,
+      "arm": "opencode-sol-xhigh-luna-max-bounded",
+      "harness": "opencode",
+      "architecture": "bounded-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 790.389549591,
+      "verifiedWallSeconds": 790.982860225,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 3,
+        "childSessionCount": 3,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-luna-orchestrator",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-luna-max-natural-t3",
+      "trial": 3,
+      "arm": "opencode-sol-xhigh-luna-max-natural",
+      "harness": "opencode",
+      "architecture": "production-like-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 893.486811677,
+      "verifiedWallSeconds": 894.060491837,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 3,
+        "childSessionCount": 3,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-natural",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "general",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "general",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "general",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-solo-t3",
+      "trial": 3,
+      "arm": "opencode-sol-xhigh-solo",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 468.3002940199999,
+      "verifiedWallSeconds": 468.89339255899984,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "cross-single",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-terra-medium-bounded-t3",
+      "trial": 3,
+      "arm": "opencode-sol-xhigh-terra-medium-bounded",
+      "harness": "opencode",
+      "architecture": "bounded-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 317.2800059170001,
+      "verifiedWallSeconds": 317.83114464900035,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 3,
+        "childSessionCount": 3,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-terra-orchestrator",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-cursor-grok-4.5-high-solo-t4",
+      "trial": 4,
+      "arm": "cursor-grok-4.5-high-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.5-high",
+      "agentWallSeconds": 139.83247731799995,
+      "verifiedWallSeconds": 140.38059878300004,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.5 High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-cursor-grok-4.6-high-solo-t4",
+      "trial": 4,
+      "arm": "cursor-grok-4.6-high-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.6-high",
+      "agentWallSeconds": 408.67770200500007,
+      "verifiedWallSeconds": 409.23496625300004,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.6 High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-cursor-grok-4.6-xhigh-solo-t4",
+      "trial": 4,
+      "arm": "cursor-grok-4.6-xhigh-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.6-xhigh",
+      "agentWallSeconds": 592.877837435,
+      "verifiedWallSeconds": 593.4684905339999,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.6 Extra High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-luna-max-bounded-t4",
+      "trial": 4,
+      "arm": "opencode-sol-xhigh-luna-max-bounded",
+      "harness": "opencode",
+      "architecture": "bounded-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 1346.4022149000002,
+      "verifiedWallSeconds": 1346.9921269440006,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 4,
+        "childSessionCount": 3,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-luna-orchestrator",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-luna-max-natural-t4",
+      "trial": 4,
+      "arm": "opencode-sol-xhigh-luna-max-natural",
+      "harness": "opencode",
+      "architecture": "production-like-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 1800.112117679,
+      "verifiedWallSeconds": 1800.690512375,
+      "timedOut": true,
+      "exit": null,
+      "signal": "SIGTERM",
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 4,
+        "childSessionCount": 4,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-natural",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "general",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "general",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "general",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "explore",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "explore",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-solo-t4",
+      "trial": 4,
+      "arm": "opencode-sol-xhigh-solo",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 437.60869314400014,
+      "verifiedWallSeconds": 438.18451957699983,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 8,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 23,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "cross-single",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-terra-medium-bounded-t4",
+      "trial": 4,
+      "arm": "opencode-sol-xhigh-terra-medium-bounded",
+      "harness": "opencode",
+      "architecture": "bounded-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 229.9356099319998,
+      "verifiedWallSeconds": 230.53492091900017,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 5,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 20,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 3,
+        "childSessionCount": 3,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-terra-orchestrator",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-cursor-grok-4.5-high-solo-t5",
+      "trial": 5,
+      "arm": "cursor-grok-4.5-high-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.5-high",
+      "agentWallSeconds": 107.01039020500006,
+      "verifiedWallSeconds": 107.56633059899976,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 8,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 23,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.5 High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-cursor-grok-4.6-high-solo-t5",
+      "trial": 5,
+      "arm": "cursor-grok-4.6-high-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.6-high",
+      "agentWallSeconds": 464.2170729319998,
+      "verifiedWallSeconds": 464.8138217129996,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 8,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 23,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.6 High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-cursor-grok-4.6-xhigh-solo-t5",
+      "trial": 5,
+      "arm": "cursor-grok-4.6-xhigh-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.6-xhigh",
+      "agentWallSeconds": 557.9867016090001,
+      "verifiedWallSeconds": 558.5710772389998,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [
+          "Cursor Grok 4.6 Extra High"
+        ],
+        "childModels": []
+      },
+      "sessions": []
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-luna-max-bounded-t5",
+      "trial": 5,
+      "arm": "opencode-sol-xhigh-luna-max-bounded",
+      "harness": "opencode",
+      "architecture": "bounded-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 880.8609534380003,
+      "verifiedWallSeconds": 881.4164209560001,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 3,
+        "childSessionCount": 3,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-luna-orchestrator",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "cross-luna-worker",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-luna-max-natural-t5",
+      "trial": 5,
+      "arm": "opencode-sol-xhigh-luna-max-natural",
+      "harness": "opencode",
+      "architecture": "production-like-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 1083.9396246439999,
+      "verifiedWallSeconds": 1084.532170387,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 3,
+        "childSessionCount": 3,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-luna"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-natural",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "general",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "general",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        },
+        {
+          "agent": "general",
+          "parent": false,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-solo-t5",
+      "trial": 5,
+      "arm": "opencode-sol-xhigh-solo",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 573.610154757,
+      "verifiedWallSeconds": 574.2057034460001,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 8,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 23,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "cross-single",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-sol-xhigh-terra-medium-bounded-t5",
+      "trial": 5,
+      "arm": "opencode-sol-xhigh-terra-medium-bounded",
+      "harness": "opencode",
+      "architecture": "bounded-subagents",
+      "requestedModel": "openai/gpt-5.6-sol:xhigh",
+      "agentWallSeconds": 584.1896126109999,
+      "verifiedWallSeconds": 584.7725940670002,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 3,
+        "childSessionCount": 3,
+        "observedModels": [],
+        "childModels": [
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          },
+          {
+            "providerID": "openai",
+            "modelID": "gpt-5.6-terra"
+          }
+        ]
+      },
+      "sessions": [
+        {
+          "agent": "cross-terra-orchestrator",
+          "parent": true,
+          "model": "gpt-5.6-sol",
+          "variant": "xhigh"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        },
+        {
+          "agent": "cross-terra-worker",
+          "parent": false,
+          "model": "gpt-5.6-terra",
+          "variant": "medium"
+        }
+      ]
+    }
+  ]
+}

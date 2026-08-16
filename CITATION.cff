@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "The author publishes under the GitHub identity mmdmcy. For legal-name attribution, please contact mmdmcy through GitHub."
+title: "A Cross-Harness Evaluation of Coding-Agent Deployment Systems"
+type: dataset
+version: 0.1.0
+date-released: 2026-08-16
+authors:
+  - name: "mmdmcy"
+    affiliation: "Katteke"
+license: CC-BY-4.0
+repository-code: "https://github.com/mmdmcy/to-subagent-or-not-to-subagent"
+url: "https://github.com/mmdmcy"
+keywords:
+  - coding agents
+  - software engineering agents
+  - subagents
+  - reproducibility
+abstract: >-
+  A sanitized empirical comparison of Cursor/Grok and OpenCode/GPT-5.6
+  deployment configurations, with a post-hoc Luna solo supplement and a
+  historical Pi replication.

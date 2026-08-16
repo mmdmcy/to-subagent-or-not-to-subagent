@@ -1,0 +1,5 @@
+{
+  "name": "benchmark-event-pipeline",
+  "private": true,
+  "type": "module"
+}

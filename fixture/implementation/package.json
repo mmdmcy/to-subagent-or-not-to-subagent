@@ -1,0 +1,8 @@
+{
+  "name": "benchmark-task-pool",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test public.test.js"
+  }
+}

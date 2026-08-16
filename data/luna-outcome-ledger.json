@@ -1,0 +1,566 @@
+{
+  "studyID": "opencode-luna-solo-exploratory-2026-08-15",
+  "disclosure": "Sanitized per-run outcome fields. Raw streams, grader output, session IDs, and host paths are withheld.",
+  "runs": [
+    {
+      "runID": "outcome-opencode-luna-max-solo-exploratory-t1",
+      "trial": 1,
+      "arm": "opencode-luna-max-solo-exploratory",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-luna:max",
+      "agentWallSeconds": 758.073487767,
+      "verifiedWallSeconds": 758.6695464539999,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "exploratory-luna-max-solo",
+          "parent": true,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-luna-xhigh-solo-exploratory-t1",
+      "trial": 1,
+      "arm": "opencode-luna-xhigh-solo-exploratory",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-luna:xhigh",
+      "agentWallSeconds": 780.5083240089999,
+      "verifiedWallSeconds": 781.1139409829999,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "exploratory-luna-xhigh-solo",
+          "parent": true,
+          "model": "gpt-5.6-luna",
+          "variant": "xhigh"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-luna-max-solo-exploratory-t2",
+      "trial": 2,
+      "arm": "opencode-luna-max-solo-exploratory",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-luna:max",
+      "agentWallSeconds": 682.248046722,
+      "verifiedWallSeconds": 682.8654926120001,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "exploratory-luna-max-solo",
+          "parent": true,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-luna-xhigh-solo-exploratory-t2",
+      "trial": 2,
+      "arm": "opencode-luna-xhigh-solo-exploratory",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-luna:xhigh",
+      "agentWallSeconds": 736.144169161,
+      "verifiedWallSeconds": 736.7522966839999,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "exploratory-luna-xhigh-solo",
+          "parent": true,
+          "model": "gpt-5.6-luna",
+          "variant": "xhigh"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-luna-max-solo-exploratory-t3",
+      "trial": 3,
+      "arm": "opencode-luna-max-solo-exploratory",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-luna:max",
+      "agentWallSeconds": 768.2721858939999,
+      "verifiedWallSeconds": 768.8746868719999,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "exploratory-luna-max-solo",
+          "parent": true,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-luna-xhigh-solo-exploratory-t3",
+      "trial": 3,
+      "arm": "opencode-luna-xhigh-solo-exploratory",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-luna:xhigh",
+      "agentWallSeconds": 620.8645710360003,
+      "verifiedWallSeconds": 621.5134530730005,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "exploratory-luna-xhigh-solo",
+          "parent": true,
+          "model": "gpt-5.6-luna",
+          "variant": "xhigh"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-luna-max-solo-exploratory-t4",
+      "trial": 4,
+      "arm": "opencode-luna-max-solo-exploratory",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-luna:max",
+      "agentWallSeconds": 779.4111110990001,
+      "verifiedWallSeconds": 780.0371687350004,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "exploratory-luna-max-solo",
+          "parent": true,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-luna-xhigh-solo-exploratory-t4",
+      "trial": 4,
+      "arm": "opencode-luna-xhigh-solo-exploratory",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-luna:xhigh",
+      "agentWallSeconds": 816.1990876810002,
+      "verifiedWallSeconds": 816.8010982520003,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "exploratory-luna-xhigh-solo",
+          "parent": true,
+          "model": "gpt-5.6-luna",
+          "variant": "xhigh"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-luna-max-solo-exploratory-t5",
+      "trial": 5,
+      "arm": "opencode-luna-max-solo-exploratory",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-luna:max",
+      "agentWallSeconds": 909.1228930170005,
+      "verifiedWallSeconds": 909.7457345500002,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 7,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": false,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 21,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "exploratory-luna-max-solo",
+          "parent": true,
+          "model": "gpt-5.6-luna",
+          "variant": "max"
+        }
+      ]
+    },
+    {
+      "runID": "outcome-opencode-luna-xhigh-solo-exploratory-t5",
+      "trial": 5,
+      "arm": "opencode-luna-xhigh-solo-exploratory",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-luna:xhigh",
+      "agentWallSeconds": 800.9708280999996,
+      "verifiedWallSeconds": 801.5542568399991,
+      "timedOut": false,
+      "exit": 0,
+      "signal": null,
+      "scores": {
+        "implementation": {
+          "passed": 7,
+          "total": 8
+        },
+        "security": {
+          "passed": 7,
+          "total": 8
+        },
+        "comprehension": {
+          "passed": 8,
+          "total": 8,
+          "fields": {
+            "billingRoute": true,
+            "acceptedBillingEvents": true,
+            "billingTopic": true,
+            "dedupeKey": true,
+            "maxDeliveryAttempts": true,
+            "retryDelaysMs": true,
+            "deadLetterReason": true,
+            "signatureHeader": true
+          }
+        }
+      },
+      "totalPassed": 22,
+      "totalChecks": 24,
+      "perfect": false,
+      "forbiddenChangeCount": 0,
+      "stream": {
+        "malformedLines": 0,
+        "taskCalls": 0,
+        "childSessionCount": 0,
+        "observedModels": [],
+        "childModels": []
+      },
+      "sessions": [
+        {
+          "agent": "exploratory-luna-xhigh-solo",
+          "parent": true,
+          "model": "gpt-5.6-luna",
+          "variant": "xhigh"
+        }
+      ]
+    }
+  ]
+}

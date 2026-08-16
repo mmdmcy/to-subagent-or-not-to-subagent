@@ -1,0 +1,783 @@
+\documentclass[11pt,oneside]{article}
+
+\usepackage[margin=0.9in]{geometry}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\definecolor{ink}{HTML}{17212B}
+\definecolor{accent}{HTML}{075985}
+\definecolor{muted}{HTML}{5B6773}
+\definecolor{panel}{HTML}{EFF6F9}
+\definecolor{rulegray}{HTML}{CBD5E1}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+  pdftitle={A Cross-Harness Evaluation of Coding-Agent Deployment Systems},
+  pdfauthor={Cross-harness coding-agent study}
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.58em}
+\setlist{nosep,leftmargin=1.5em}
+\renewcommand{\arraystretch}{1.16}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{muted}Coding-Agent Deployment Systems}
+\fancyhead[R]{\small\color{muted}August 2026}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\titleformat{\section}{\Large\bfseries\color{ink}}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\large\bfseries\color{accent}}{\thesubsection}{0.7em}{}
+\sloppy
+
+\lstdefinestyle{config}{
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{panel},
+  frame=single,
+  rulecolor=\color{rulegray},
+  breaklines=true,
+  columns=fullflexible,
+  showstringspaces=false
+}
+
+\newcommand{\resultbox}[1]{%
+  \begin{center}
+  \fcolorbox{accent}{panel}{\parbox{0.92\textwidth}{#1}}
+  \end{center}
+}
+
+\begin{document}
+
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+  \centering
+  \vspace*{1.5cm}
+  {\Huge\bfseries\color{ink}Coding-Agent\\[0.2em]Deployment Systems\par}
+  \vspace{0.7cm}
+  {\LARGE A Predeclared Cross-Harness Evaluation\\with a Post-Hoc Luna Solo Supplement\par}
+  \vspace{1.2cm}
+  {\large A thesis-style technical report and corrective extension\par}
+  \vfill
+  \begin{tabular}{rl}
+    Date: & 15 August 2026 \\
+    Host: & Linux x86\_64, 4 logical CPUs, 15.5 GiB RAM \\
+    Cursor Agent CLI: & \texttt{2026.08.11-e8db854}, authenticated subscription \\
+    OpenCode: & 1.18.18, authenticated subscription \\
+    New outcome runs: & 35 predeclared plus 10 post-hoc exploratory \\
+    Prior controlled runs: & 40 in OpenCode and Pi \\
+  \end{tabular}
+  \vfill
+  {\color{muted}\small
+  The complete new protocol, raw streams, hidden-grader outputs, hashes, and
+  analysis are under \texttt{reproducibility/cross-harness/}.
+  }
+\end{titlepage}
+\hypersetup{pageanchor=true}
+
+\begin{abstract}
+An earlier experiment on this machine found that a GPT-5.6 Sol/xhigh parent
+with three bounded Terra/medium workers completed one separable coding workload
+faster than Sol/xhigh alone in OpenCode and Pi. That study omitted a strong
+external baseline: a fast single-agent system in Cursor CLI.
+
+This extension predeclared seven deployment arms in a local protocol frozen
+before outcomes and ran five randomized complete blocks, producing 35 fresh
+outcome runs on the same hidden-graded, three-package workload. The arms were
+solo Cursor Grok 4.5 high, Grok 4.6 high,
+and Grok 4.6 xhigh; OpenCode Sol/xhigh solo; bounded Sol+Terra/medium; bounded
+Sol+Luna/max; and production-like Sol+Luna/max. Cursor's Task tool was excluded,
+and raw streams confirmed zero subagent calls. The workload was deliberately
+separable, favoring parallel delegation.
+
+The pre-outcome freeze was local rather than an externally archived immutable
+preregistration. Current analysis checks artifact and score integrity, but cannot
+prove that the source files were unchanged before execution.
+
+Solo Grok 4.5 high was fastest and highest-scoring: 113/120 hidden checks in
+109.5 seconds mean agent time. OpenCode Sol/xhigh solo scored 112/120 in 486.8
+seconds. Grok 4.5 reduced aggregate agent time by 77.5\%; every block favored
+Grok, and the mean paired reduction was 77.0\% with a descriptive 95\%
+small-sample interval of 69.2--84.7\%. Bounded Terra scored 106/120 in 405.1
+seconds. Bounded and natural Luna scored 110/120 in 949.4 and at least 1190.2
+seconds mean; natural Luna timed out once. Grok 4.6 high and xhigh did not
+improve aggregate quality and were 4.0 and 5.7 times slower than Grok 4.5.
+
+After the parent analysis, a requested post-hoc supplement randomized Luna/max
+solo and Luna/xhigh solo in five new blocks. Luna/xhigh scored 110/120 in 750.9
+seconds mean agent time; Luna/max scored 109/120 in 779.4 seconds. Xhigh used
+3.7\% less aggregate time but was faster in only two blocks, and its paired
+interval crossed zero. Against non-concurrent historical outcomes, Grok used
+85.4--86.0\% less aggregate time and Sol used 35.2--37.5\% less, with higher
+quality. This corroborates but does not alter the frozen parent selection.
+
+No arm achieved a perfect run. The result is therefore not permission to skip
+verification. It is a deployment decision: default to solo Cursor/Grok 4.5 high
+for the tested workflow; use OpenCode Sol/xhigh solo if OpenCode is required;
+do not replace Sol with Luna based on the post-hoc solo screen; disable Luna/max
+subagents; and treat bounded Terra as experimental rather than a default.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Decision}
+
+\resultbox{\textbf{Operating recommendation.} Default to solo Cursor Agent with
+Grok 4.5 high. Keep Task/subagent invocation disabled unless a task-specific,
+hidden-graded comparison demonstrates an advantage. If OpenCode is required,
+use Sol/xhigh solo with \texttt{task} denied. Disable Luna/max subagents. Treat
+Luna solo as unsupported by the post-hoc screen. Treat bounded Terra as an
+experimental low-risk mode, not a security-sensitive default.}
+
+This practical production command distills the tested default:
+
+\begin{lstlisting}[style=config]
+agent -p --force --trust \
+  --model cursor-grok-4.5-high \
+  --output-format stream-json \
+  --exclude-tools task_tool_call \
+  "<task>"
+\end{lstlisting}
+
+It is not the exact isolated invocation. The harness also used a fresh
+\texttt{CURSOR\_CONFIG\_DIR} and \texttt{--data-dir}, explicit workspace,
+\texttt{--single-turn}, \texttt{--sandbox disabled}, and flags disabling
+project config, indexing, and codebase references. Exact reproduction uses
+\texttt{run.mjs}.
+
+The installed CLI accepted \texttt{--exclude-tools task\_tool\_call}, although
+that flag was absent from ordinary help output. Cursor documents automatic
+subagents, so model selection alone does not prove solo execution. The five
+outcome streams each contained one session ID and zero Task calls.
+
+This policy is evidence-calibrated. It is strong for this fixture and observation
+window, moderate as a personal default, and not a universal model ranking.
+The post-hoc solo supplement also found historical Sol 35.2--37.5\% faster than
+Luna/xhigh or Luna/max, with higher aggregate quality.
+
+\section{Why the Earlier Thesis Was Incomplete}
+
+The prior study asked whether subagents improved an OpenCode-centered workflow.
+Its within-harness findings were useful:
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}Xrrrr@{}}
+\toprule
+Prior harness & Single mean & Delegated mean & Time change & Quality \\
+\midrule
+OpenCode 1.18.7, five pairs & 19.5m & 11.3m & $-42.1\%$ & 108/120 vs 112/120 corrected \\
+Pi 0.80.6, three pairs & 12.2m & 8.0m & $-33.9\%$ & 68/72 vs 66/72 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Those results answer an architecture question conditional on using Sol and the
+tested harness. They do not answer whether to use OpenCode and GPT-5.6 at all.
+Sol/xhigh was treated as an established default rather than tested against
+Cursor/Grok. The previous report disclosed that limitation but still made an
+operating recommendation beyond its evidence.
+
+This is not a cosmetic distinction. SWE-agent shows that agent-computer
+interface design can materially affect coding performance, while Agentless
+demonstrates that simple systems can outperform elaborate autonomous agents.
+The intervention relevant to a user is the complete deployment system: harness,
+model, tools, reasoning effort, and delegation policy.
+
+\section{Research Questions}
+
+\begin{description}
+  \item[RQ1] Which tested solo Cursor/Grok configuration is quality-eligible
+  and fastest on the frozen workload?
+  \item[RQ2] Does the best solo Cursor arm beat OpenCode Sol/xhigh alone on
+  hidden quality and user-perceived completion time?
+  \item[RQ3] Does it beat the earlier recommended bounded Sol+Terra system?
+  \item[RQ4] Within current OpenCode, do Terra or Luna subagents improve time
+  without unacceptable quality loss?
+  \item[RQ5] Do the tested higher-effort configurations improve quality enough
+  to justify their latency?
+  \item[RQ6] What operating policy survives the combined old and new evidence?
+\end{description}
+
+After the parent study was complete, the user requested a separate exploratory
+question: how do Luna/max and Luna/xhigh perform as solo OpenCode owners? It is
+not retroactively designated a preregistered research question.
+
+The estimand is deployable-system performance. This study does not identify a
+pure causal effect of concurrency or model family.
+
+Capacity was asymmetric by design: OpenCode solo had 36 parent turns; bounded
+arms had 12 parent turns plus up to 36 child turns; natural Luna could continue
+until the wall cap. Cursor exposed no equivalent turn cap. These are usable
+architectures, not equal-compute treatments.
+
+\section{Preregistered Design}
+
+\subsection{Experimental arms}
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}XllX@{}}
+\toprule
+Arm & Parent / solo & Children & Delegation policy \\
+\midrule
+Cursor Grok 4.5 & Grok 4.5 high & None & Task excluded \\
+Cursor Grok 4.6 high & Grok 4.6 high & None & Task excluded \\
+Cursor Grok 4.6 xhigh & Grok 4.6 xhigh & None & Task excluded \\
+OpenCode solo & Sol/xhigh, 36 turns & None & Task denied \\
+Bounded Terra & Sol/xhigh, 12 turns & 3 Terra/medium & One package each; no recursion \\
+Bounded Luna & Sol/xhigh, 12 turns & 3 Luna/max & One package each; no recursion \\
+Natural Luna & Sol/xhigh & Luna/max & Broad optional recursion \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+The natural arm reproduced the relevant former production configuration: only
+\texttt{general}, \texttt{explore}, and \texttt{scout}, all Luna/max, were
+available as subagents.
+
+\subsection{Workload and grading}
+
+Every run received a fresh copy of three independent JavaScript packages:
+
+\begin{itemize}
+  \item bounded-concurrency mapping implementation;
+  \item session and authentication security repair;
+  \item event-pipeline comprehension producing eight exact facts.
+\end{itemize}
+
+Each package contributed eight hidden checks, 24 per run. Agents saw public
+tests. Graders were not copied into their workspaces, and exact grader paths did
+not appear in streams, but OS-level non-access was not enforced. The
+comprehension deliverable was fixed before outcomes at
+\texttt{comprehension/answer.json}; there was no score-improving path fallback.
+
+The explicit package independence favors subagents. A solo winner therefore
+wins despite a workload designed to expose parallelism. The study says little
+about coupled refactors.
+
+\subsection{Sampling, randomization, and endpoints}
+
+Five randomized complete blocks were frozen before outcomes. Each contained all
+seven arms once. A seeded generator fixed the 35-run order; top-level runs were
+sequential. The prompt, fixture hash, arm set, model IDs, five-block sample,
+30-minute cap, and decision rule were frozen before outcome inspection.
+
+Primary quality was hidden checks passed. Primary performance was process wall
+time from agent launch to exit. Verified wall time added deterministic grading
+and produced nearly identical estimates. Checks were clustered within runs and
+were not treated as independent samples.
+
+  The predeclared operating rule required no timeout or abnormal exit, no model
+mismatch or forbidden final fixture change, aggregate quality within one check
+of the best arm, and at least 7/8 security checks in every run. Among eligible
+systems, lowest aggregate verified time won.
+
+\subsection{Pilot amendments}
+
+Two excluded pilots found harness defects before outcomes. Cursor rejected
+\texttt{--exclude-workspace-context} for this account, so it was removed for all
+Cursor arms. The first natural-Luna pilot could see benchmark-only worker
+definitions, so that arm was restricted to the user's three production agent
+names. Failed pilot artifacts are retained.
+
+\subsection{Post-hoc Luna solo supplement}
+
+On August 15, after the parent result was known, a separate manifest froze
+Luna/max solo and Luna/xhigh solo before their own outcomes. Both used OpenCode,
+a 36-step cap, denied Task, and received the same fixture, prompt, graders, and
+1800-second timeout. Five seeded blocks randomized these two arms and produced
+ten sequential outcomes.
+
+Max versus xhigh is randomized within the supplement. Comparisons to August 14
+Grok and Sol are non-concurrent descriptive comparisons, not paired effects.
+The supplement does not change the parent manifest or operating-rule winner.
+Its 43 raw artifacts are hash-pinned; source/config hashes are an explicitly
+post-outcome snapshot, not proof of a pre-outcome source freeze.
+
+\section{Main Results}
+
+\subsection{Arm-level outcomes}
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}Xrrrrr@{}}
+\toprule
+Arm & Checks & Mean & Median & Range & Timeouts \\
+\midrule
+\textbf{Grok 4.5 solo} & \textbf{113/120} & \textbf{109.5s} & \textbf{107.0s} & 89--140s & 0 \\
+Grok 4.6 high solo & 112/120 & 433.9s & 427.4s & 398--471s & 0 \\
+Grok 4.6 xhigh solo & 111/120 & 622.8s & 592.9s & 558--688s & 0 \\
+Sol/xhigh solo & 112/120 & 486.8s & 468.3s & 401--574s & 0 \\
+Sol+Terra bounded & 106/120 & 405.1s & 402.0s & 230--584s & 0 \\
+Sol+Luna bounded & 110/120 & 949.4s & 880.9s & 790--1346s & 0 \\
+Sol+Luna natural & 110/120 & $\geq$1190.2s & 1083.9s & 893 to $>1800$s & 1 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Grok 4.5, Grok 4.6 high, and Sol solo passed the fixed gate. Grok 4.5 won
+mechanically on time. Grok 4.6 xhigh, Terra, and both Luna arms fell outside the
+one-check quality margin; natural Luna also timed out.
+
+\subsection{Grok 4.5 versus OpenCode Sol solo}
+
+\begin{center}
+\begin{tabular}{@{}rrrrr@{}}
+\toprule
+Trial & Grok 4.5 & Sol solo & Time saved & Scores \\
+\midrule
+1 & 89.3s & 553.4s & 83.9\% & 22 vs 22 \\
+2 & 89.5s & 401.0s & 77.7\% & 23 vs 22 \\
+3 & 122.1s & 468.3s & 73.9\% & 23 vs 22 \\
+4 & 139.8s & 437.6s & 68.0\% & 22 vs 23 \\
+5 & 107.0s & 573.6s & 81.3\% & 23 vs 23 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Aggregate agent-time reduction was 77.5\%. Mean paired reduction was 77.0\%,
+with descriptive 95\% interval 69.2--84.7\%. Mean absolute savings were 377.3
+seconds, interval 275.0--479.5 seconds. Every block favored Grok. Aggregate
+quality was 113/120 versus 112/120: parity under the fixed margin, not evidence
+of general intelligence superiority. No speed-quality tradeoff was observed
+under the prespecified margin.
+
+\subsection{All preregistered contrasts}
+
+Block-level agent-time reductions for the candidate named first:
+
+\begin{center}
+\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Contrast & T1 & T2 & T3 & T4 & T5 \\
+\midrule
+Grok 4.5 vs Sol & 83.9\% & 77.7\% & 73.9\% & 68.0\% & 81.3\% \\
+Grok 4.5 vs Terra & 81.9\% & 77.7\% & 61.5\% & 39.2\% & 81.7\% \\
+Terra vs Sol & 11.1\% & $-0.2$\% & 32.2\% & 47.5\% & $-1.8$\% \\
+Terra vs Luna & 44.7\% & 52.1\% & 59.9\% & 82.9\% & 33.7\% \\
+Sol vs natural Luna & 50.2\% & 62.2\% & 47.6\% & $\geq75.7$\% & 47.1\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{center}
+\scriptsize
+\begin{tabularx}{\textwidth}{@{}Xrrrccc@{}}
+\toprule
+Contrast & Aggregate & Mean [95\% interval] & Quality & Faster & Perfect & Timeouts \\
+\midrule
+Grok 4.5 vs Sol & 77.5\% & 77.0 [69.2,84.7] & 113--112 & 5/5 & 0--0 & 0--0 \\
+Grok 4.5 vs Terra & 73.0\% & 68.4 [45.6,91.2] & 113--106 & 5/5 & 0--0 & 0--0 \\
+Terra vs Sol & 16.8\% & 17.7 [$-8.9$,44.4] & 106--112 & 3/5 & 0--0 & 0--0 \\
+Terra vs Luna & 57.3\% & 54.7 [31.7,77.7] & 106--110 & 5/5 & 0--0 & 0--0 \\
+Sol vs natural Luna & $\geq59.1$\% & 56.6 [41.2,71.9] & 112--110 & 5/5 & 0--0 & 0--1 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Natural-Luna trial 4 is right-censored. Its reduction is a lower bound; the
+interval using the timeout cap is descriptive, not a completion-time interval.
+
+Mean absolute agent-time savings with 95\% intervals were: Grok 4.5 versus Sol,
+377.3 seconds [275.0,479.5]; Grok 4.5 versus Terra, 295.5 [102.1,489.0]; Terra
+versus Sol, 81.7 [$-36.8$,200.2]; Terra versus Luna, 544.3 [138.7,949.8]; and
+Sol versus natural Luna, 703.4 [233.9,1173.0] using the capped timeout and thus
+not an exact completion-time interval.
+
+\subsection{Grok 4.5 versus bounded Terra}
+
+Grok was faster in all five blocks. Aggregate agent-time reduction was 73.0\%;
+mean paired reduction was 68.4\%, interval 45.6--91.2\%. Quality was 113/120
+versus 106/120. Terra scored only 5/8 on security in two runs and failed the
+safety gate. The missing external baseline therefore reverses the old operating
+recommendation.
+
+\subsection{Delegation within current OpenCode}
+
+Bounded Terra reduced aggregate agent time by 16.8\% versus Sol solo but was
+faster in only three of five blocks. Mean paired reduction was 17.7\%, interval
+$-8.9$--44.4\%. Terra lost six checks, 106/120 versus 112/120. Excluding its
+transient-test-edit deviation yielded a similar clean-block estimate: 20.1\%
+aggregate reduction, interval $-12.6$--57.1\%, and 84/96 versus 90/96 checks.
+
+Terra was 57.3\% faster than bounded Luna but lost four checks. Excluding both
+bounded protocol-deviation blocks left three pairs: Terra remained 45.6\%
+faster and scored 64/72 versus 66/72.
+
+Sol solo was faster than natural Luna in every block. The capped intention-to-
+treat advantage was at least 59.1\%; one natural run is right-censored at 1800
+seconds. Across the four normally completed pairs, Sol remained 51.9\% faster
+and scored 89/96 versus 88/96.
+
+\subsection{Higher-effort configurations did not dominate}
+
+Grok 4.5 reduced time by 74.8\% versus Grok 4.6 high and 82.4\% versus Grok 4.6
+xhigh while scoring 113/120 versus 112/120 and 111/120. This changes model
+generation and effort, so it does not isolate a causal effort effect. The
+earlier same-model screen also found no gain from Terra/high over Terra/medium,
+while Luna/max was slow. Operationally, higher-effort tested configurations did
+not guarantee better quality.
+
+\subsection{Post-hoc Luna solo results}
+
+\begin{center}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Exploratory arm & Checks & Mean & Median & Range & Timeouts \\
+\midrule
+Luna/xhigh solo & 110/120 & 750.9s & 780.5s & 621--816s & 0 \\
+Luna/max solo & 109/120 & 779.4s & 768.3s & 682--909s & 0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Every run had exactly one observed Luna parent, no child session or Task call,
+a normal exit, and only allowed file changes. Xhigh used 3.7\% less aggregate
+time and scored one check higher than max, but was faster in only two of five
+randomized blocks. Mean paired reduction was 3.1\%, descriptive 95\% interval
+$-11.5$--17.7\%; mean savings were 28.5 seconds, interval $-86.2$--143.2.
+There is no clear latency effect between these effort settings.
+
+\begin{center}
+\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Non-concurrent baseline & vs Luna/xhigh & vs Luna/max & Quality \\
+\midrule
+Grok 4.5 solo & 85.4\% less time & 86.0\% less & 113 vs 110 / 109 \\
+Sol/xhigh solo & 35.2\% less time & 37.5\% less & 112 vs 110 / 109 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+These historical gaps reinforce the operating choice but are not randomized
+within-block effects because host and service time differed.
+
+\section{Quality and Resource Analysis}
+
+\subsection{Systematic misses}
+
+No preregistered arm achieved 24/24, and all seven preregistered arms solved
+comprehension perfectly:
+
+\begin{center}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Arm & Implementation & Security & Comprehension \\
+\midrule
+Grok 4.5 & 35/40 & 38/40 & 40/40 \\
+Grok 4.6 high & 35/40 & 37/40 & 40/40 \\
+Grok 4.6 xhigh & 36/40 & 35/40 & 40/40 \\
+Sol solo & 37/40 & 35/40 & 40/40 \\
+Bounded Terra & 35/40 & 31/40 & 40/40 \\
+Bounded Luna & 35/40 & 35/40 & 40/40 \\
+Natural Luna & 35/40 & 35/40 & 40/40 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Every Grok 4.5 run missed full invalid-concurrency validation; two also missed a
+redirect parser edge. Every Sol run missed the redirect edge; three missed
+invalid concurrency. Terra additionally missed profile-patch protections in two
+runs. Public tests were not sufficient to certify completion. Contract-focused
+tests remain mandatory, especially around nullability, parser layers,
+authentication, redirects, cancellation, and cleanup races.
+
+Neither exploratory Luna solo arm produced a perfect run. Both scored 35/40 on
+implementation and 35/40 on security, systematically missing invalid-
+concurrency and redirect checks. Luna/xhigh scored 40/40 on comprehension;
+Luna/max scored 39/40 after one \texttt{dedupeKey} miss.
+
+\subsection{Telemetry}
+
+Across five Cursor runs, Grok 4.5 reported 135,151 input, 51,494 output, and
+649,600 cache-read tokens. Grok 4.6 high reported 523,892, 143,195, and
+1,432,192; xhigh reported 889,517, 197,714, and 2,333,568. Cursor emitted no
+authoritative subscription charge or separate reasoning-token field.
+
+OpenCode database telemetry and the prior nominal rate card gave:
+
+\begin{center}
+\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Arm & Sessions & Input & Output & Reasoning & Proxy cost \\
+\midrule
+Sol solo & 5 & 212,008 & 37,775 & 79,682 & \$5.117 \\
+Bounded Terra & 20 & 368,169 & 67,375 & 64,343 & \$4.720 \\
+Bounded Luna & 20 & 691,841 & 97,013 & 303,225 & \$5.741 \\
+Natural Luna & 21 & 890,564 & 102,395 & 403,134 & \$6.432 \\
+Luna/xhigh solo* & 5 & 426,285 & 60,729 & 130,879 & \$1.896 \\
+Luna/max solo* & 5 & 373,067 & 49,511 & 153,038 & \$1.891 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The starred rows are from the post-hoc supplement. Their lower nominal proxy
+reflects the Luna rate card, not faster completion or an actual invoice.
+
+These are API-equivalent proxies, not OAuth subscription invoices, and Cursor
+and OpenCode token semantics differ. Time, hidden quality, and rate-limit
+behavior are more actionable than invented cross-vendor dollars.
+
+\section{Protocol Deviations and Integrity}
+
+All 35 outcomes exist, match the frozen order, share the fixture and prompt
+digests, and match the stored grader outputs and current artifact hashes. A
+manifest verified 163 raw
+artifacts before reanalysis. Requested and observed models matched; Cursor made
+zero Task calls; final changes were in scope. No exact grader filename or grader
+directory appeared in a model stream.
+
+Adversarial review found two bounded deviations:
+
+\begin{itemize}
+  \item Terra trial 2 temporarily edited \texttt{security/public.test.js}. The
+  parent resumed the same worker in a fourth Task call and restored it before
+  grading.
+  \item Luna trial 4 resumed an implementation worker after it reported its
+  configured step cap, weakening a strict 12-turn interpretation.
+\end{itemize}
+
+Both remain in intention-to-treat estimates and are excluded in clean-block
+sensitivity estimates. Neither affects the Grok-versus-Sol contrast.
+
+Isolation was policy-based, not OS-enforced. Workspaces were fresh and graders
+were outside them, but Cursor used \texttt{--sandbox disabled}, processes
+inherited the host environment, and harness credentials were present. No
+observed path leakage is not proof of non-access. Future replication should use
+containers or namespaces and broker credentials outside model-executed shells.
+
+The post-hoc supplement retained ten outcomes plus streams, stderr, and grader
+outputs. Its 43-file manifest verified before reanalysis. Every observed parent
+was Luna with the requested xhigh or max variant; all runs were solo and in
+scope. Its analyzer also verifies the parent 163-file manifest and records the
+parent \texttt{runs.json} digest. Independent audit found no arithmetic or
+current artifact-integrity error; methodological limits remain material. Source/
+config hashes were captured after outcomes and are disclosed as such.
+
+\section{Reconciling Old and New OpenCode Evidence}
+
+\begin{center}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Study & Sol mean & Terra mean & Reduction & Quality change \\
+\midrule
+August 12, OC 1.18.7 & 19.5m & 11.3m & 42.1\% & $+4$/120 corrected \\
+August 14, OC 1.18.18 & 8.1m & 6.8m & 16.8\% & $-6$/120 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The difference is evidence, not an inconvenience. Provider sampling, server
+conditions, harness versions, and model behavior make agent-system effects
+temporally unstable. One fixture estimates repeatability in one observation
+window, not a permanent architecture constant.
+
+The synthesis is narrower:
+
+\begin{enumerate}
+  \item parallel delegation can compress critical paths for independent work;
+  \item the benefit can be modest or unreliable even on a favorable fixture;
+  \item worker quality and parent correction determine whether speed survives;
+  \item a faster solo harness/model can dominate the delegated architecture;
+  \item architecture selection needs external baselines and periodic retesting.
+\end{enumerate}
+
+The August 15 solo supplement adds a same-harness descriptive check: Luna/xhigh
+and Luna/max averaged 12.5 and 13.0 minutes versus the August 14 Sol mean of 8.1
+minutes. Sol was not rerun concurrently, so this corroborates rather than
+estimates a randomized Sol-versus-Luna effect.
+
+\section{Adversarial Defense}
+
+\subsection{One synthetic fixture cannot select a universal winner}
+
+\textbf{Sustained.} This is a personal deployment decision. Multi-language,
+SWE-bench-scale, coupled, interactive, and long-horizon replication is needed
+for broad claims.
+
+\subsection{The workload was engineered for subagents}
+
+\textbf{Sustained, but conservative for the result.} Explicit independence
+makes delegation easier. It cannot explain the solo arm's advantage.
+
+\subsection{Harness and model are confounded}
+
+\textbf{Sustained by design.} The user selects complete systems. A factorial
+study would be needed to attribute the advantage to Grok versus Cursor's loop.
+
+\subsection{Cursor had no turn cap}
+
+\textbf{Sustained.} No equivalent was exposed. A common wall cap estimates
+which deployable system manages work efficiently.
+
+\subsection{Five blocks are too few}
+
+\textbf{Sustained for population inference.} The Grok--Sol gap was large and
+directionally consistent, but task-distribution coverage remains absent.
+
+\subsection{Scores differ by one check}
+
+\textbf{Sustained.} No intelligence superiority is claimed. Grok met quality
+parity while taking far less time. Every system still requires verification.
+
+\subsection{The timeout biases natural-Luna time}
+
+\textbf{Sustained.} It is right-censored. The capped result is a lower bound on
+Sol's advantage; four completed pairs still favor Sol by 51.9\%.
+
+\subsection{Subscription economics and isolation are incomplete}
+
+\textbf{Sustained.} Actual plan allowances should be monitored. A future study
+needs OS isolation and credential brokering. This report does not manufacture
+cross-vendor prices or claim proof of grader non-access.
+
+\subsection{Luna solo was added after the parent result}
+
+\textbf{Sustained.} The supplement is post-hoc relative to the parent decision
+and cannot repair the omission retroactively. Its two-arm order was frozen
+before those ten outcomes, so xhigh versus max is randomized within the
+supplement. Grok and Sol comparisons remain non-concurrent and descriptive.
+
+\section{Operating Policy}
+
+\subsection{Default mode}
+
+Use solo Cursor/Grok 4.5 high. Keep Task disabled when latency and attribution
+matter. Give one coherent task, inspect the diff, and require tests.
+
+\subsection{Verification gate}
+
+\begin{enumerate}
+  \item Run repository tests rather than trusting the completion summary.
+  \item Add focused checks for contract boundaries omitted by public tests.
+  \item Inspect changed-file scope, including tests and configuration.
+  \item Review security parsing and cancellation paths independently.
+  \item Reject ``done'' when final edits were not followed by rerun checks.
+\end{enumerate}
+
+\subsection{OpenCode mode}
+
+Use Sol/xhigh solo with Task denied if OpenCode is needed. The post-hoc solo
+screen does not support replacing Sol with Luna/xhigh or Luna/max. Do not expose
+broad Luna agents by default. Preserve bounded Terra only as an explicit
+experiment for low-risk independent packages with deterministic tests and
+parent review; the current evidence does not support security-sensitive use.
+
+\subsection{Rebenchmark triggers}
+
+Repeat a frozen comparison after a major harness or model change, subscription
+routing change, primary-language change, repository-scale change, or a shift
+from independent packages to coupled refactors. Compare benchmark predictions
+against actual completion and correction logs.
+
+\section{Threats to Validity}
+
+\subsection{Internal validity}
+
+Sampling was nondeterministic. Harness, model, and effort were bundled. Two
+bounded runs deviated. Five blocks cannot balance every time trend. Isolation
+was not OS-enforced. The Luna supplement was requested after the parent result,
+and its source hashes were captured post-outcome.
+
+\subsection{Construct validity}
+
+Hidden checks measure selected edges, not maintainability or complete security.
+Wall time omits interactive steering. Nominal OpenCode cost is not billing.
+Repeated fixture completion overrepresents deterministic tasks.
+
+\subsection{External validity}
+
+One JavaScript fixture, machine, account, and three-day window were studied.
+Separability favors delegation. No large monorepository, UI task, migration,
+dependency upgrade, or multi-hour task was tested. Cursor subagents were not
+tested because the counterclaim concerned Cursor solo.
+
+\subsection{Statistical conclusion validity}
+
+Five blocks are imprecise for modest effects. Checks are clustered within runs.
+Best-Cursor selection used a frozen quality-first rule but still evaluated
+three variants on one fixture. The natural timeout is censored. Luna xhigh
+versus max also has five blocks, and its historical comparisons are not paired.
+
+\section{Reproducibility}
+
+The private research archive contains the frozen manifest, protocol and pilot amendments,
+post-outcome deviation ledger, isolated OpenCode config, resumable runner, 35
+consolidated records, per-run raw streams and graders, a 163-file SHA-256
+manifest, and standard-library-only analysis. The
+\texttt{exploratory/luna-solo/} supplement contains its separate frozen two-arm
+manifest, isolated config, ten outcomes, 43-file hash manifest, and analyzer.
+
+\begin{lstlisting}[style=config]
+cd path/to/reproducibility/cross-harness
+node analyze.mjs
+cd exploratory/luna-solo
+node analyze.mjs
+\end{lstlisting}
+
+The analyzer verifies current manifest and fixture digests, recomputes package
+scores from stored grader output, and checks count and order, prompt digests,
+model identity, Cursor Task calls, grader exits, per-run/consolidated equality,
+exact grader path appearances, final file scope, and raw artifact hashes. These
+checks do not prove pre-outcome source immutability or OS-level non-access to
+graders.
+
+\section{Conclusion}
+
+The original paper was right about mechanism but wrong to stop at the OpenCode
+boundary. Bounded delegation can compress a critical path. That does not make
+subagents the best workflow or a good default.
+
+In the missing head-to-head comparison, solo Cursor/Grok 4.5 high was 77.5\%
+faster than OpenCode Sol/xhigh solo, 73.0\% faster than bounded Terra, and more
+accurate in aggregate than both. Luna/max subagents were substantially slower in
+the tested delegated configurations. The requested follow-up also found Luna/xhigh and Luna/max solo slower and
+lower-scoring than historical Sol and Grok; xhigh did not clearly beat max in
+the randomized supplement. Higher-effort configurations did not improve the
+decision outcome. The concern about subagent overhead is supported, and
+switching the OpenCode solo owner from Sol to Luna is not supported either.
+
+\resultbox{\textbf{Final thesis.} Optimize the complete coding system, not the
+number of agents. Start with the fastest quality-eligible solo agent. Add
+  delegation only after a task-specific hidden-graded comparison shows its
+  integration overhead and quality risk are worth paying. On this fixture and
+  observation window,
+that means Cursor Agent with Grok 4.5 high, no subagents, and mandatory
+verification.}
+
+\section*{References}
+\addcontentsline{toc}{section}{References}
+
+\begin{enumerate}
+  \item C. Jimenez et al., ``SWE-bench: Can Language Models Resolve Real-World
+  GitHub Issues?'' ICLR 2024, arXiv:2310.06770.
+  \item J. Yang et al., ``SWE-agent: Agent-Computer Interfaces Enable Automated
+  Software Engineering,'' arXiv:2405.15793.
+  \item C. S. Xia et al., ``Agentless: Demystifying LLM-based Software
+  Engineering Agents,'' arXiv:2407.01489.
+  \item Cursor, Headless CLI, \url{https://cursor.com/docs/cli/headless}.
+  \item Cursor, Output format,
+  \url{https://cursor.com/docs/cli/reference/output-format}.
+  \item Cursor, Subagents, \url{https://cursor.com/docs/subagents}.
+  \item OpenCode, Agents, \url{https://opencode.ai/docs/agents/}.
+  \item OpenCode, Models, \url{https://opencode.ai/docs/models/}.
+  \item Historical local report,
+  \texttt{opencode-subagent-performance-audit-2026-08-12.md}.
+\end{enumerate}
+
+\end{document}

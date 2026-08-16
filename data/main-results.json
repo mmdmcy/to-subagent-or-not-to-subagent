@@ -1,0 +1,1187 @@
+{
+  "studyID": "cursor-opencode-cross-harness-2026-08-14",
+  "status": "predeclared local main study",
+  "selection": {
+    "highestAggregateScore": "113/120",
+    "qualityMarginChecks": 1,
+    "bestCursor": "cursor-grok-4.5-high-solo",
+    "operatingRuleSelection": "cursor-grok-4.5-high-solo",
+    "eligibleArms": [
+      "cursor-grok-4.5-high-solo",
+      "cursor-grok-4.6-high-solo",
+      "opencode-sol-xhigh-solo"
+    ]
+  },
+  "summaries": [
+    {
+      "arm": "cursor-grok-4.5-high-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.5-high",
+      "trials": 5,
+      "score": "113/120",
+      "packageScores": {
+        "implementation": "35/40",
+        "security": "38/40",
+        "comprehension": "40/40"
+      },
+      "meanAgentSeconds": 109.543,
+      "medianAgentSeconds": 107.01,
+      "rangeAgentSeconds": [
+        89.312,
+        139.832
+      ],
+      "totalAgentSeconds": 547.713,
+      "totalVerifiedSeconds": 550.487,
+      "timeouts": 0,
+      "normalExits": 5,
+      "perfectRuns": 0,
+      "qualityEligible": true,
+      "operatingRuleEligible": true,
+      "rows": [
+        {
+          "trial": 1,
+          "agentSeconds": 89.312,
+          "verifiedSeconds": 89.863,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 2,
+          "agentSeconds": 89.466,
+          "verifiedSeconds": 90.039,
+          "score": 23,
+          "implementation": 7,
+          "security": 8,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 3,
+          "agentSeconds": 122.092,
+          "verifiedSeconds": 122.638,
+          "score": 23,
+          "implementation": 7,
+          "security": 8,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 4,
+          "agentSeconds": 139.832,
+          "verifiedSeconds": 140.381,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 5,
+          "agentSeconds": 107.01,
+          "verifiedSeconds": 107.566,
+          "score": 23,
+          "implementation": 7,
+          "security": 8,
+          "comprehension": 8,
+          "timedOut": false
+        }
+      ]
+    },
+    {
+      "arm": "cursor-grok-4.6-high-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.6-high",
+      "trials": 5,
+      "score": "112/120",
+      "packageScores": {
+        "implementation": "35/40",
+        "security": "37/40",
+        "comprehension": "40/40"
+      },
+      "meanAgentSeconds": 433.916,
+      "medianAgentSeconds": 427.403,
+      "rangeAgentSeconds": [
+        398.404,
+        470.88
+      ],
+      "totalAgentSeconds": 2169.581,
+      "totalVerifiedSeconds": 2172.527,
+      "timeouts": 0,
+      "normalExits": 5,
+      "perfectRuns": 0,
+      "qualityEligible": true,
+      "operatingRuleEligible": true,
+      "rows": [
+        {
+          "trial": 1,
+          "agentSeconds": 398.404,
+          "verifiedSeconds": 399.014,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 2,
+          "agentSeconds": 427.403,
+          "verifiedSeconds": 427.995,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 3,
+          "agentSeconds": 470.88,
+          "verifiedSeconds": 471.469,
+          "score": 23,
+          "implementation": 7,
+          "security": 8,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 4,
+          "agentSeconds": 408.678,
+          "verifiedSeconds": 409.235,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 5,
+          "agentSeconds": 464.217,
+          "verifiedSeconds": 464.814,
+          "score": 23,
+          "implementation": 7,
+          "security": 8,
+          "comprehension": 8,
+          "timedOut": false
+        }
+      ]
+    },
+    {
+      "arm": "cursor-grok-4.6-xhigh-solo",
+      "harness": "cursor",
+      "architecture": "solo",
+      "requestedModel": "cursor-grok-4.6-xhigh",
+      "trials": 5,
+      "score": "111/120",
+      "packageScores": {
+        "implementation": "36/40",
+        "security": "35/40",
+        "comprehension": "40/40"
+      },
+      "meanAgentSeconds": 622.825,
+      "medianAgentSeconds": 592.878,
+      "rangeAgentSeconds": [
+        557.987,
+        687.804
+      ],
+      "totalAgentSeconds": 3114.126,
+      "totalVerifiedSeconds": 3117.029,
+      "timeouts": 0,
+      "normalExits": 5,
+      "perfectRuns": 0,
+      "qualityEligible": false,
+      "operatingRuleEligible": false,
+      "rows": [
+        {
+          "trial": 1,
+          "agentSeconds": 684.918,
+          "verifiedSeconds": 685.493,
+          "score": 23,
+          "implementation": 8,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 2,
+          "agentSeconds": 590.539,
+          "verifiedSeconds": 591.116,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 3,
+          "agentSeconds": 687.804,
+          "verifiedSeconds": 688.381,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 4,
+          "agentSeconds": 592.878,
+          "verifiedSeconds": 593.468,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 5,
+          "agentSeconds": 557.987,
+          "verifiedSeconds": 558.571,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        }
+      ]
+    },
+    {
+      "arm": "opencode-sol-xhigh-solo",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": null,
+      "trials": 5,
+      "score": "112/120",
+      "packageScores": {
+        "implementation": "37/40",
+        "security": "35/40",
+        "comprehension": "40/40"
+      },
+      "meanAgentSeconds": 486.792,
+      "medianAgentSeconds": 468.3,
+      "rangeAgentSeconds": [
+        400.994,
+        573.61
+      ],
+      "totalAgentSeconds": 2433.959,
+      "totalVerifiedSeconds": 2436.944,
+      "timeouts": 0,
+      "normalExits": 5,
+      "perfectRuns": 0,
+      "qualityEligible": true,
+      "operatingRuleEligible": true,
+      "rows": [
+        {
+          "trial": 1,
+          "agentSeconds": 553.447,
+          "verifiedSeconds": 554.048,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 2,
+          "agentSeconds": 400.994,
+          "verifiedSeconds": 401.612,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 3,
+          "agentSeconds": 468.3,
+          "verifiedSeconds": 468.893,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 4,
+          "agentSeconds": 437.609,
+          "verifiedSeconds": 438.185,
+          "score": 23,
+          "implementation": 8,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 5,
+          "agentSeconds": 573.61,
+          "verifiedSeconds": 574.206,
+          "score": 23,
+          "implementation": 8,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        }
+      ]
+    },
+    {
+      "arm": "opencode-sol-xhigh-terra-medium-bounded",
+      "harness": "opencode",
+      "architecture": "bounded-subagents",
+      "requestedModel": null,
+      "trials": 5,
+      "score": "106/120",
+      "packageScores": {
+        "implementation": "35/40",
+        "security": "31/40",
+        "comprehension": "40/40"
+      },
+      "meanAgentSeconds": 405.087,
+      "medianAgentSeconds": 401.965,
+      "rangeAgentSeconds": [
+        229.936,
+        584.19
+      ],
+      "totalAgentSeconds": 2025.436,
+      "totalVerifiedSeconds": 2028.397,
+      "timeouts": 0,
+      "normalExits": 5,
+      "perfectRuns": 0,
+      "qualityEligible": false,
+      "operatingRuleEligible": false,
+      "rows": [
+        {
+          "trial": 1,
+          "agentSeconds": 492.066,
+          "verifiedSeconds": 492.68,
+          "score": 20,
+          "implementation": 7,
+          "security": 5,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 2,
+          "agentSeconds": 401.965,
+          "verifiedSeconds": 402.578,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 3,
+          "agentSeconds": 317.28,
+          "verifiedSeconds": 317.831,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 4,
+          "agentSeconds": 229.936,
+          "verifiedSeconds": 230.535,
+          "score": 20,
+          "implementation": 7,
+          "security": 5,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 5,
+          "agentSeconds": 584.19,
+          "verifiedSeconds": 584.773,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        }
+      ]
+    },
+    {
+      "arm": "opencode-sol-xhigh-luna-max-bounded",
+      "harness": "opencode",
+      "architecture": "bounded-subagents",
+      "requestedModel": null,
+      "trials": 5,
+      "score": "110/120",
+      "packageScores": {
+        "implementation": "35/40",
+        "security": "35/40",
+        "comprehension": "40/40"
+      },
+      "meanAgentSeconds": 949.356,
+      "medianAgentSeconds": 880.861,
+      "rangeAgentSeconds": [
+        790.39,
+        1346.402
+      ],
+      "totalAgentSeconds": 4746.778,
+      "totalVerifiedSeconds": 4749.678,
+      "timeouts": 0,
+      "normalExits": 5,
+      "perfectRuns": 0,
+      "qualityEligible": false,
+      "operatingRuleEligible": false,
+      "rows": [
+        {
+          "trial": 1,
+          "agentSeconds": 889.987,
+          "verifiedSeconds": 890.556,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 2,
+          "agentSeconds": 839.138,
+          "verifiedSeconds": 839.731,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 3,
+          "agentSeconds": 790.39,
+          "verifiedSeconds": 790.983,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 4,
+          "agentSeconds": 1346.402,
+          "verifiedSeconds": 1346.992,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 5,
+          "agentSeconds": 880.861,
+          "verifiedSeconds": 881.416,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        }
+      ]
+    },
+    {
+      "arm": "opencode-sol-xhigh-luna-max-natural",
+      "harness": "opencode",
+      "architecture": "production-like-subagents",
+      "requestedModel": null,
+      "trials": 5,
+      "score": "110/120",
+      "packageScores": {
+        "implementation": "35/40",
+        "security": "35/40",
+        "comprehension": "40/40"
+      },
+      "meanAgentSeconds": 1190.208,
+      "medianAgentSeconds": 1083.94,
+      "rangeAgentSeconds": [
+        893.487,
+        1800.112
+      ],
+      "totalAgentSeconds": 5951.039,
+      "totalVerifiedSeconds": 5953.983,
+      "timeouts": 1,
+      "normalExits": 4,
+      "perfectRuns": 0,
+      "qualityEligible": false,
+      "operatingRuleEligible": false,
+      "rows": [
+        {
+          "trial": 1,
+          "agentSeconds": 1111.33,
+          "verifiedSeconds": 1111.933,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 2,
+          "agentSeconds": 1062.17,
+          "verifiedSeconds": 1062.766,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 3,
+          "agentSeconds": 893.487,
+          "verifiedSeconds": 894.06,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 4,
+          "agentSeconds": 1800.112,
+          "verifiedSeconds": 1800.691,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": true
+        },
+        {
+          "trial": 5,
+          "agentSeconds": 1083.94,
+          "verifiedSeconds": 1084.532,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        }
+      ]
+    }
+  ],
+  "primaryContrasts": [
+    {
+      "id": "best-cursor-vs-opencode-solo",
+      "candidate": "cursor-grok-4.5-high-solo",
+      "baseline": "opencode-sol-xhigh-solo",
+      "includedTrials": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "excludedTrials": [],
+      "candidateScore": "113/120",
+      "baselineScore": "112/120",
+      "agentTime": {
+        "aggregateReductionPercent": 77.5,
+        "meanPairwiseReductionPercent": 76.97,
+        "meanPairwiseReductionCI95": [
+          69.22,
+          84.73
+        ],
+        "meanSavedSeconds": 377.25,
+        "meanSavedSecondsCI95": [
+          274.99,
+          479.51
+        ],
+        "fasterBlocks": 5
+      },
+      "verifiedTime": {
+        "aggregateReductionPercent": 77.41,
+        "meanPairwiseReductionPercent": 76.89,
+        "meanPairwiseReductionCI95": [
+          69.13,
+          84.64
+        ],
+        "meanSavedSeconds": 377.29,
+        "meanSavedSecondsCI95": [
+          275.03,
+          479.56
+        ],
+        "fasterBlocks": 5
+      },
+      "censoredBlocks": [],
+      "censoringInterpretation": null,
+      "rows": [
+        {
+          "trial": 1,
+          "candidateAgentSeconds": 89.312,
+          "baselineAgentSeconds": 553.447,
+          "candidateSeconds": 89.863,
+          "baselineSeconds": 554.048,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 22,
+          "baselineScore": 22,
+          "agentSavedSeconds": 464.135,
+          "agentSavedPercent": 83.863,
+          "verifiedSavedSeconds": 464.185,
+          "verifiedSavedPercent": 83.781
+        },
+        {
+          "trial": 2,
+          "candidateAgentSeconds": 89.466,
+          "baselineAgentSeconds": 400.994,
+          "candidateSeconds": 90.039,
+          "baselineSeconds": 401.612,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 23,
+          "baselineScore": 22,
+          "agentSavedSeconds": 311.528,
+          "agentSavedPercent": 77.689,
+          "verifiedSavedSeconds": 311.573,
+          "verifiedSavedPercent": 77.581
+        },
+        {
+          "trial": 3,
+          "candidateAgentSeconds": 122.092,
+          "baselineAgentSeconds": 468.3,
+          "candidateSeconds": 122.638,
+          "baselineSeconds": 468.893,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 23,
+          "baselineScore": 22,
+          "agentSavedSeconds": 346.208,
+          "agentSavedPercent": 73.929,
+          "verifiedSavedSeconds": 346.255,
+          "verifiedSavedPercent": 73.845
+        },
+        {
+          "trial": 4,
+          "candidateAgentSeconds": 139.832,
+          "baselineAgentSeconds": 437.609,
+          "candidateSeconds": 140.381,
+          "baselineSeconds": 438.185,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 22,
+          "baselineScore": 23,
+          "agentSavedSeconds": 297.777,
+          "agentSavedPercent": 68.046,
+          "verifiedSavedSeconds": 297.804,
+          "verifiedSavedPercent": 67.963
+        },
+        {
+          "trial": 5,
+          "candidateAgentSeconds": 107.01,
+          "baselineAgentSeconds": 573.61,
+          "candidateSeconds": 107.566,
+          "baselineSeconds": 574.206,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 23,
+          "baselineScore": 23,
+          "agentSavedSeconds": 466.6,
+          "agentSavedPercent": 81.344,
+          "verifiedSavedSeconds": 466.64,
+          "verifiedSavedPercent": 81.267
+        }
+      ]
+    },
+    {
+      "id": "best-cursor-vs-bounded-terra",
+      "candidate": "cursor-grok-4.5-high-solo",
+      "baseline": "opencode-sol-xhigh-terra-medium-bounded",
+      "includedTrials": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "excludedTrials": [],
+      "candidateScore": "113/120",
+      "baselineScore": "106/120",
+      "agentTime": {
+        "aggregateReductionPercent": 72.96,
+        "meanPairwiseReductionPercent": 68.4,
+        "meanPairwiseReductionCI95": [
+          45.62,
+          91.17
+        ],
+        "meanSavedSeconds": 295.54,
+        "meanSavedSecondsCI95": [
+          102.14,
+          488.95
+        ],
+        "fasterBlocks": 5
+      },
+      "verifiedTime": {
+        "aggregateReductionPercent": 72.86,
+        "meanPairwiseReductionPercent": 68.3,
+        "meanPairwiseReductionCI95": [
+          45.54,
+          91.07
+        ],
+        "meanSavedSeconds": 295.58,
+        "meanSavedSecondsCI95": [
+          102.17,
+          488.99
+        ],
+        "fasterBlocks": 5
+      },
+      "censoredBlocks": [],
+      "censoringInterpretation": null,
+      "rows": [
+        {
+          "trial": 1,
+          "candidateAgentSeconds": 89.312,
+          "baselineAgentSeconds": 492.066,
+          "candidateSeconds": 89.863,
+          "baselineSeconds": 492.68,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 22,
+          "baselineScore": 20,
+          "agentSavedSeconds": 402.754,
+          "agentSavedPercent": 81.85,
+          "verifiedSavedSeconds": 402.817,
+          "verifiedSavedPercent": 81.76
+        },
+        {
+          "trial": 2,
+          "candidateAgentSeconds": 89.466,
+          "baselineAgentSeconds": 401.965,
+          "candidateSeconds": 90.039,
+          "baselineSeconds": 402.578,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 23,
+          "baselineScore": 22,
+          "agentSavedSeconds": 312.499,
+          "agentSavedPercent": 77.743,
+          "verifiedSavedSeconds": 312.539,
+          "verifiedSavedPercent": 77.634
+        },
+        {
+          "trial": 3,
+          "candidateAgentSeconds": 122.092,
+          "baselineAgentSeconds": 317.28,
+          "candidateSeconds": 122.638,
+          "baselineSeconds": 317.831,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 23,
+          "baselineScore": 22,
+          "agentSavedSeconds": 195.188,
+          "agentSavedPercent": 61.519,
+          "verifiedSavedSeconds": 195.193,
+          "verifiedSavedPercent": 61.414
+        },
+        {
+          "trial": 4,
+          "candidateAgentSeconds": 139.832,
+          "baselineAgentSeconds": 229.936,
+          "candidateSeconds": 140.381,
+          "baselineSeconds": 230.535,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 22,
+          "baselineScore": 20,
+          "agentSavedSeconds": 90.104,
+          "agentSavedPercent": 39.187,
+          "verifiedSavedSeconds": 90.154,
+          "verifiedSavedPercent": 39.106
+        },
+        {
+          "trial": 5,
+          "candidateAgentSeconds": 107.01,
+          "baselineAgentSeconds": 584.19,
+          "candidateSeconds": 107.566,
+          "baselineSeconds": 584.773,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 23,
+          "baselineScore": 22,
+          "agentSavedSeconds": 477.18,
+          "agentSavedPercent": 81.682,
+          "verifiedSavedSeconds": 477.207,
+          "verifiedSavedPercent": 81.606
+        }
+      ]
+    },
+    {
+      "id": "bounded-terra-vs-opencode-solo",
+      "candidate": "opencode-sol-xhigh-terra-medium-bounded",
+      "baseline": "opencode-sol-xhigh-solo",
+      "includedTrials": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "excludedTrials": [],
+      "candidateScore": "106/120",
+      "baselineScore": "112/120",
+      "agentTime": {
+        "aggregateReductionPercent": 16.78,
+        "meanPairwiseReductionPercent": 17.74,
+        "meanPairwiseReductionCI95": [
+          -8.92,
+          44.41
+        ],
+        "meanSavedSeconds": 81.7,
+        "meanSavedSecondsCI95": [
+          -36.8,
+          200.21
+        ],
+        "fasterBlocks": 3
+      },
+      "verifiedTime": {
+        "aggregateReductionPercent": 16.76,
+        "meanPairwiseReductionPercent": 17.72,
+        "meanPairwiseReductionCI95": [
+          -8.91,
+          44.35
+        ],
+        "meanSavedSeconds": 81.71,
+        "meanSavedSecondsCI95": [
+          -36.79,
+          200.21
+        ],
+        "fasterBlocks": 3
+      },
+      "censoredBlocks": [],
+      "censoringInterpretation": null,
+      "rows": [
+        {
+          "trial": 1,
+          "candidateAgentSeconds": 492.066,
+          "baselineAgentSeconds": 553.447,
+          "candidateSeconds": 492.68,
+          "baselineSeconds": 554.048,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 20,
+          "baselineScore": 22,
+          "agentSavedSeconds": 61.381,
+          "agentSavedPercent": 11.091,
+          "verifiedSavedSeconds": 61.368,
+          "verifiedSavedPercent": 11.076
+        },
+        {
+          "trial": 2,
+          "candidateAgentSeconds": 401.965,
+          "baselineAgentSeconds": 400.994,
+          "candidateSeconds": 402.578,
+          "baselineSeconds": 401.612,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 22,
+          "baselineScore": 22,
+          "agentSavedSeconds": -0.971,
+          "agentSavedPercent": -0.242,
+          "verifiedSavedSeconds": -0.966,
+          "verifiedSavedPercent": -0.241
+        },
+        {
+          "trial": 3,
+          "candidateAgentSeconds": 317.28,
+          "baselineAgentSeconds": 468.3,
+          "candidateSeconds": 317.831,
+          "baselineSeconds": 468.893,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 22,
+          "baselineScore": 22,
+          "agentSavedSeconds": 151.02,
+          "agentSavedPercent": 32.249,
+          "verifiedSavedSeconds": 151.062,
+          "verifiedSavedPercent": 32.217
+        },
+        {
+          "trial": 4,
+          "candidateAgentSeconds": 229.936,
+          "baselineAgentSeconds": 437.609,
+          "candidateSeconds": 230.535,
+          "baselineSeconds": 438.185,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 20,
+          "baselineScore": 23,
+          "agentSavedSeconds": 207.673,
+          "agentSavedPercent": 47.456,
+          "verifiedSavedSeconds": 207.65,
+          "verifiedSavedPercent": 47.389
+        },
+        {
+          "trial": 5,
+          "candidateAgentSeconds": 584.19,
+          "baselineAgentSeconds": 573.61,
+          "candidateSeconds": 584.773,
+          "baselineSeconds": 574.206,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 22,
+          "baselineScore": 23,
+          "agentSavedSeconds": -10.58,
+          "agentSavedPercent": -1.844,
+          "verifiedSavedSeconds": -10.567,
+          "verifiedSavedPercent": -1.84
+        }
+      ]
+    },
+    {
+      "id": "bounded-terra-vs-bounded-luna",
+      "candidate": "opencode-sol-xhigh-terra-medium-bounded",
+      "baseline": "opencode-sol-xhigh-luna-max-bounded",
+      "includedTrials": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "excludedTrials": [],
+      "candidateScore": "106/120",
+      "baselineScore": "110/120",
+      "agentTime": {
+        "aggregateReductionPercent": 57.33,
+        "meanPairwiseReductionPercent": 54.65,
+        "meanPairwiseReductionCI95": [
+          31.66,
+          77.65
+        ],
+        "meanSavedSeconds": 544.27,
+        "meanSavedSecondsCI95": [
+          138.74,
+          949.79
+        ],
+        "fasterBlocks": 5
+      },
+      "verifiedTime": {
+        "aggregateReductionPercent": 57.29,
+        "meanPairwiseReductionPercent": 54.62,
+        "meanPairwiseReductionCI95": [
+          31.63,
+          77.61
+        ],
+        "meanSavedSeconds": 544.26,
+        "meanSavedSecondsCI95": [
+          138.72,
+          949.79
+        ],
+        "fasterBlocks": 5
+      },
+      "censoredBlocks": [],
+      "censoringInterpretation": null,
+      "rows": [
+        {
+          "trial": 1,
+          "candidateAgentSeconds": 492.066,
+          "baselineAgentSeconds": 889.987,
+          "candidateSeconds": 492.68,
+          "baselineSeconds": 890.556,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 20,
+          "baselineScore": 22,
+          "agentSavedSeconds": 397.921,
+          "agentSavedPercent": 44.711,
+          "verifiedSavedSeconds": 397.876,
+          "verifiedSavedPercent": 44.677
+        },
+        {
+          "trial": 2,
+          "candidateAgentSeconds": 401.965,
+          "baselineAgentSeconds": 839.138,
+          "candidateSeconds": 402.578,
+          "baselineSeconds": 839.731,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 22,
+          "baselineScore": 22,
+          "agentSavedSeconds": 437.173,
+          "agentSavedPercent": 52.098,
+          "verifiedSavedSeconds": 437.153,
+          "verifiedSavedPercent": 52.059
+        },
+        {
+          "trial": 3,
+          "candidateAgentSeconds": 317.28,
+          "baselineAgentSeconds": 790.39,
+          "candidateSeconds": 317.831,
+          "baselineSeconds": 790.983,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 22,
+          "baselineScore": 22,
+          "agentSavedSeconds": 473.11,
+          "agentSavedPercent": 59.858,
+          "verifiedSavedSeconds": 473.152,
+          "verifiedSavedPercent": 59.818
+        },
+        {
+          "trial": 4,
+          "candidateAgentSeconds": 229.936,
+          "baselineAgentSeconds": 1346.402,
+          "candidateSeconds": 230.535,
+          "baselineSeconds": 1346.992,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 20,
+          "baselineScore": 22,
+          "agentSavedSeconds": 1116.466,
+          "agentSavedPercent": 82.922,
+          "verifiedSavedSeconds": 1116.457,
+          "verifiedSavedPercent": 82.885
+        },
+        {
+          "trial": 5,
+          "candidateAgentSeconds": 584.19,
+          "baselineAgentSeconds": 880.861,
+          "candidateSeconds": 584.773,
+          "baselineSeconds": 881.416,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 22,
+          "baselineScore": 22,
+          "agentSavedSeconds": 296.671,
+          "agentSavedPercent": 33.68,
+          "verifiedSavedSeconds": 296.643,
+          "verifiedSavedPercent": 33.655
+        }
+      ]
+    },
+    {
+      "id": "opencode-solo-vs-natural-luna",
+      "candidate": "opencode-sol-xhigh-solo",
+      "baseline": "opencode-sol-xhigh-luna-max-natural",
+      "includedTrials": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "excludedTrials": [],
+      "candidateScore": "112/120",
+      "baselineScore": "110/120",
+      "agentTime": {
+        "aggregateReductionPercent": 59.1,
+        "meanPairwiseReductionPercent": 56.56,
+        "meanPairwiseReductionCI95": [
+          41.24,
+          71.88
+        ],
+        "meanSavedSeconds": 703.42,
+        "meanSavedSecondsCI95": [
+          233.85,
+          1172.98
+        ],
+        "fasterBlocks": 5
+      },
+      "verifiedTime": {
+        "aggregateReductionPercent": 59.07,
+        "meanPairwiseReductionPercent": 56.53,
+        "meanPairwiseReductionCI95": [
+          41.21,
+          71.86
+        ],
+        "meanSavedSeconds": 703.41,
+        "meanSavedSecondsCI95": [
+          233.84,
+          1172.98
+        ],
+        "fasterBlocks": 5
+      },
+      "censoredBlocks": [
+        4
+      ],
+      "censoringInterpretation": "Timeout durations are right-censored at 1800 seconds; reductions against a timed-out baseline are lower bounds, not exact completion-time effects.",
+      "rows": [
+        {
+          "trial": 1,
+          "candidateAgentSeconds": 553.447,
+          "baselineAgentSeconds": 1111.33,
+          "candidateSeconds": 554.048,
+          "baselineSeconds": 1111.933,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 22,
+          "baselineScore": 22,
+          "agentSavedSeconds": 557.883,
+          "agentSavedPercent": 50.2,
+          "verifiedSavedSeconds": 557.885,
+          "verifiedSavedPercent": 50.173
+        },
+        {
+          "trial": 2,
+          "candidateAgentSeconds": 400.994,
+          "baselineAgentSeconds": 1062.17,
+          "candidateSeconds": 401.612,
+          "baselineSeconds": 1062.766,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 22,
+          "baselineScore": 22,
+          "agentSavedSeconds": 661.176,
+          "agentSavedPercent": 62.248,
+          "verifiedSavedSeconds": 661.154,
+          "verifiedSavedPercent": 62.211
+        },
+        {
+          "trial": 3,
+          "candidateAgentSeconds": 468.3,
+          "baselineAgentSeconds": 893.487,
+          "candidateSeconds": 468.893,
+          "baselineSeconds": 894.06,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 22,
+          "baselineScore": 22,
+          "agentSavedSeconds": 425.187,
+          "agentSavedPercent": 47.587,
+          "verifiedSavedSeconds": 425.167,
+          "verifiedSavedPercent": 47.555
+        },
+        {
+          "trial": 4,
+          "candidateAgentSeconds": 437.609,
+          "baselineAgentSeconds": 1800.112,
+          "candidateSeconds": 438.185,
+          "baselineSeconds": 1800.691,
+          "candidateTimedOut": false,
+          "baselineTimedOut": true,
+          "candidateScore": 23,
+          "baselineScore": 22,
+          "agentSavedSeconds": 1362.503,
+          "agentSavedPercent": 75.69,
+          "verifiedSavedSeconds": 1362.506,
+          "verifiedSavedPercent": 75.666
+        },
+        {
+          "trial": 5,
+          "candidateAgentSeconds": 573.61,
+          "baselineAgentSeconds": 1083.94,
+          "candidateSeconds": 574.206,
+          "baselineSeconds": 1084.532,
+          "candidateTimedOut": false,
+          "baselineTimedOut": false,
+          "candidateScore": 23,
+          "baselineScore": 22,
+          "agentSavedSeconds": 510.33,
+          "agentSavedPercent": 47.081,
+          "verifiedSavedSeconds": 510.326,
+          "verifiedSavedPercent": 47.055
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "Five repeated blocks use one synthetic separable JavaScript workload; checks are clustered within run.",
+    "Intervals are descriptive small-sample t intervals, not broad task-population inference.",
+    "Cursor and OpenCode token telemetry have different semantics; subscription costs are not directly comparable.",
+    "The workload favors parallel delegation, so it does not estimate performance on coupled tasks.",
+    "One Terra run transiently edited and restored a public test; one Luna run resumed a capped worker. Intention-to-treat and clean-block sensitivity results are both reported.",
+    "The natural-Luna timeout is right-censored; comparisons using its capped duration are lower-bound speed advantages for the competing arm.",
+    "Process isolation was policy-based rather than OS-enforced. Streams contain no hidden grader paths, but absence of access cannot be proven.",
+    "Manifest, prompt, current fixture, and stored-score integrity are checked at analysis time; source files were not externally immutable before outcomes."
+  ]
+}

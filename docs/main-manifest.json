@@ -1,0 +1,58 @@
+{
+  "studyID": "cursor-opencode-cross-harness-2026-08-14",
+  "frozenAt": "2026-08-14T11:50:00Z",
+  "orderSeed": 560814,
+  "trials": 5,
+  "timeoutSeconds": 1800,
+  "killGraceSeconds": 30,
+  "prompt": "Complete all tasks described in the root README.md. Work autonomously, inspect the repositories, make only requested changes, and run available checks. Do not ask questions. Finish with a concise summary.",
+  "arms": [
+    {
+      "id": "cursor-grok-4.5-high-solo",
+      "harness": "cursor",
+      "model": "cursor-grok-4.5-high",
+      "architecture": "solo"
+    },
+    {
+      "id": "cursor-grok-4.6-high-solo",
+      "harness": "cursor",
+      "model": "cursor-grok-4.6-high",
+      "architecture": "solo"
+    },
+    {
+      "id": "cursor-grok-4.6-xhigh-solo",
+      "harness": "cursor",
+      "model": "cursor-grok-4.6-xhigh",
+      "architecture": "solo"
+    },
+    {
+      "id": "opencode-sol-xhigh-solo",
+      "harness": "opencode",
+      "agent": "cross-single",
+      "architecture": "solo"
+    },
+    {
+      "id": "opencode-sol-xhigh-terra-medium-bounded",
+      "harness": "opencode",
+      "agent": "cross-terra-orchestrator",
+      "architecture": "bounded-subagents"
+    },
+    {
+      "id": "opencode-sol-xhigh-luna-max-bounded",
+      "harness": "opencode",
+      "agent": "cross-luna-orchestrator",
+      "architecture": "bounded-subagents"
+    },
+    {
+      "id": "opencode-sol-xhigh-luna-max-natural",
+      "harness": "opencode",
+      "agent": "cross-natural",
+      "architecture": "production-like-subagents"
+    }
+  ],
+  "allowedChangedPaths": [
+    "implementation/src/task-pool.js",
+    "security/src/session-boundary.js",
+    "comprehension/answer.json"
+  ]
+}

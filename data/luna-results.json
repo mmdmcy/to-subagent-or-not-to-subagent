@@ -1,0 +1,297 @@
+{
+  "studyID": "opencode-luna-solo-exploratory-2026-08-15",
+  "status": "post-hoc exploratory supplement locked before outcome execution",
+  "summaries": [
+    {
+      "arm": "opencode-luna-max-solo-exploratory",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-luna:max",
+      "trials": 5,
+      "score": "109/120",
+      "packageScores": {
+        "implementation": "35/40",
+        "security": "35/40",
+        "comprehension": "39/40"
+      },
+      "meanAgentSeconds": 779.426,
+      "medianAgentSeconds": 768.272,
+      "rangeAgentSeconds": [
+        682.248,
+        909.123
+      ],
+      "totalAgentSeconds": 3897.128,
+      "totalVerifiedSeconds": 3900.193,
+      "timeouts": 0,
+      "normalExits": 5,
+      "perfectRuns": 0,
+      "qualityEligible": null,
+      "operatingRuleEligible": null,
+      "rows": [
+        {
+          "trial": 1,
+          "agentSeconds": 758.073,
+          "verifiedSeconds": 758.67,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 2,
+          "agentSeconds": 682.248,
+          "verifiedSeconds": 682.865,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 3,
+          "agentSeconds": 768.272,
+          "verifiedSeconds": 768.875,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 4,
+          "agentSeconds": 779.411,
+          "verifiedSeconds": 780.037,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 5,
+          "agentSeconds": 909.123,
+          "verifiedSeconds": 909.746,
+          "score": 21,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 7,
+          "timedOut": false
+        }
+      ]
+    },
+    {
+      "arm": "opencode-luna-xhigh-solo-exploratory",
+      "harness": "opencode",
+      "architecture": "solo",
+      "requestedModel": "openai/gpt-5.6-luna:xhigh",
+      "trials": 5,
+      "score": "110/120",
+      "packageScores": {
+        "implementation": "35/40",
+        "security": "35/40",
+        "comprehension": "40/40"
+      },
+      "meanAgentSeconds": 750.937,
+      "medianAgentSeconds": 780.508,
+      "rangeAgentSeconds": [
+        620.865,
+        816.199
+      ],
+      "totalAgentSeconds": 3754.687,
+      "totalVerifiedSeconds": 3757.735,
+      "timeouts": 0,
+      "normalExits": 5,
+      "perfectRuns": 0,
+      "qualityEligible": null,
+      "operatingRuleEligible": null,
+      "rows": [
+        {
+          "trial": 1,
+          "agentSeconds": 780.508,
+          "verifiedSeconds": 781.114,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 2,
+          "agentSeconds": 736.144,
+          "verifiedSeconds": 736.752,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 3,
+          "agentSeconds": 620.865,
+          "verifiedSeconds": 621.513,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 4,
+          "agentSeconds": 816.199,
+          "verifiedSeconds": 816.801,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        },
+        {
+          "trial": 5,
+          "agentSeconds": 800.971,
+          "verifiedSeconds": 801.554,
+          "score": 22,
+          "implementation": 7,
+          "security": 7,
+          "comprehension": 8,
+          "timedOut": false
+        }
+      ]
+    }
+  ],
+  "randomizedContrast": {
+    "candidate": "opencode-luna-xhigh-solo-exploratory",
+    "baseline": "opencode-luna-max-solo-exploratory",
+    "candidateScore": "110/120",
+    "baselineScore": "109/120",
+    "aggregateReductionPercent": 3.66,
+    "meanPairwiseReductionPercent": 3.1,
+    "meanPairwiseReductionCI95": [
+      -11.53,
+      17.73
+    ],
+    "meanSavedSeconds": 28.49,
+    "meanSavedSecondsCI95": [
+      -86.21,
+      143.18
+    ],
+    "fasterBlocks": 2,
+    "rows": [
+      {
+        "trial": 1,
+        "xhighSeconds": 780.508,
+        "maxSeconds": 758.073,
+        "xhighScore": 22,
+        "maxScore": 22,
+        "xhighSavedSeconds": -22.435,
+        "xhighSavedPercent": -2.959
+      },
+      {
+        "trial": 2,
+        "xhighSeconds": 736.144,
+        "maxSeconds": 682.248,
+        "xhighScore": 22,
+        "maxScore": 22,
+        "xhighSavedSeconds": -53.896,
+        "xhighSavedPercent": -7.9
+      },
+      {
+        "trial": 3,
+        "xhighSeconds": 620.865,
+        "maxSeconds": 768.272,
+        "xhighScore": 22,
+        "maxScore": 22,
+        "xhighSavedSeconds": 147.408,
+        "xhighSavedPercent": 19.187
+      },
+      {
+        "trial": 4,
+        "xhighSeconds": 816.199,
+        "maxSeconds": 779.411,
+        "xhighScore": 22,
+        "maxScore": 22,
+        "xhighSavedSeconds": -36.788,
+        "xhighSavedPercent": -4.72
+      },
+      {
+        "trial": 5,
+        "xhighSeconds": 800.971,
+        "maxSeconds": 909.123,
+        "xhighScore": 22,
+        "maxScore": 21,
+        "xhighSavedSeconds": 108.152,
+        "xhighSavedPercent": 11.896
+      }
+    ]
+  },
+  "historicalComparisons": [
+    {
+      "exploratoryArm": "opencode-luna-max-solo-exploratory",
+      "historicalBaseline": "cursor-grok-4.5-high-solo",
+      "exploratoryScore": "109/120",
+      "baselineScore": "113/120",
+      "exploratoryMeanAgentSeconds": 779.426,
+      "baselineMeanAgentSeconds": 109.543,
+      "baselineAggregateTimeReductionPercent": 85.95,
+      "interpretation": "Non-concurrent descriptive comparison; not a randomized paired effect."
+    },
+    {
+      "exploratoryArm": "opencode-luna-max-solo-exploratory",
+      "historicalBaseline": "opencode-sol-xhigh-solo",
+      "exploratoryScore": "109/120",
+      "baselineScore": "112/120",
+      "exploratoryMeanAgentSeconds": 779.426,
+      "baselineMeanAgentSeconds": 486.792,
+      "baselineAggregateTimeReductionPercent": 37.54,
+      "interpretation": "Non-concurrent descriptive comparison; not a randomized paired effect."
+    },
+    {
+      "exploratoryArm": "opencode-luna-xhigh-solo-exploratory",
+      "historicalBaseline": "cursor-grok-4.5-high-solo",
+      "exploratoryScore": "110/120",
+      "baselineScore": "113/120",
+      "exploratoryMeanAgentSeconds": 750.937,
+      "baselineMeanAgentSeconds": 109.543,
+      "baselineAggregateTimeReductionPercent": 85.41,
+      "interpretation": "Non-concurrent descriptive comparison; not a randomized paired effect."
+    },
+    {
+      "exploratoryArm": "opencode-luna-xhigh-solo-exploratory",
+      "historicalBaseline": "opencode-sol-xhigh-solo",
+      "exploratoryScore": "110/120",
+      "baselineScore": "112/120",
+      "exploratoryMeanAgentSeconds": 750.937,
+      "baselineMeanAgentSeconds": 486.792,
+      "baselineAggregateTimeReductionPercent": 35.18,
+      "interpretation": "Non-concurrent descriptive comparison; not a randomized paired effect."
+    }
+  ],
+  "integrity": {
+    "expectedRuns": 10,
+    "observedRuns": 10,
+    "frozenOrderMatched": true,
+    "runsWithCoreIntegrityFailures": 0,
+    "fixtureDigest": "d749721d4aaf1ba28725d80598f9b433ec0b87b3fb42b46332bcb7754bd99dca",
+    "promptDigest": "5909c9b34de100bf53e23278926686f3900081749687342cfa8b40198486f7be",
+    "existingArtifactManifestVerified": {
+      "present": true,
+      "files": 43
+    },
+    "parentHistoricalInput": {
+      "runsSHA256": "7153391a2ceb0b4657bf96bbe2c1a7f2a574368186d1b9759a782d37905ef371",
+      "artifactManifestVerified": {
+        "present": true,
+        "files": 163
+      }
+    },
+    "isolationClaim": "No hidden grader path appeared in a model stream, but OS-level isolation was not enforced."
+  },
+  "caveats": [
+    "This supplement was requested after the parent study and is post-hoc relative to its frozen operating rule.",
+    "Five repeated blocks use the same single synthetic separable JavaScript workload as the parent study.",
+    "Historical Grok and Sol comparisons are non-concurrent and descriptive, so host time and service conditions may differ.",
+    "Intervals for the randomized Luna/max-versus-xhigh contrast are descriptive small-sample t intervals.",
+    "Config, runner, analyzer, and grader hashes are a post-outcome snapshot, not proof of a pre-outcome source freeze.",
+    "Process isolation was policy-based rather than OS-enforced; absence of hidden-path access cannot be proven."
+  ]
+}
