@@ -76,7 +76,9 @@ the light task but timed out on all three heavyweight attempts. Grok Build was
 quota-censored after its initial successful requests.
 
 See `docs/harness-weight-report.md`, `docs/harness-weight-thesis.pdf`, and
-`data/harness-weight-results.json` for the complete sanitized analysis.
+`data/harness-weight-results.json` for the complete sanitized analysis. See
+`docs/harness-weight-replication.md` for exact setup, commands, model choices,
+quota dispositions, and validity boundaries.
 
 ## Methodological Status
 
@@ -109,6 +111,7 @@ capacity, narrow hidden checks, and non-OS-enforced isolation. See
 - `docs/thesis.pdf` and `docs/thesis.tex`: sanitized thesis-style report.
 - `data/harness-weight-results.json`: sanitized CPU/RSS startup and task analysis.
 - `docs/harness-weight-report.md`: separate harness-weight report and limitations.
+- `docs/harness-weight-replication.md`: complete replication and troubleshooting guide.
 - `docs/harness-weight-thesis.pdf` and `docs/harness-weight-thesis.tex`: separate follow-up thesis.
 - `docs/harness-weight-manifest.json`: harness-weight protocol and model arms.
 - `scripts/validate-public-data.mjs`: arithmetic and disclosure checks (requires Node.js and `pdftotext`).
