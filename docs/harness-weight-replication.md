@@ -172,6 +172,32 @@ task before the free Grok Build quota was exhausted. Later attempts returned an
 explicit usage-limit message. Those attempts are provider-blocked, not fast
 task failures and not evidence about Grok's resource use.
 
+### Grok Build with OpenRouter
+
+Grok Build is provider-configurable. The supplement used a separate manifest and
+private `GROK_HOME` with this model definition:
+
+```toml
+[models]
+default = "openrouter-grok-4-6"
+
+[model.openrouter-grok-4-6]
+model = "x-ai/grok-4.6"
+base_url = "https://openrouter.ai/api/v1"
+name = "Grok 4.6 via OpenRouter"
+env_key = "OPENROUTER_API_KEY"
+```
+
+The API key was read from a private `.env` file and was never printed, written
+to the config, or stored in raw results. The supplement used a 3600-second
+task timeout and 64 agent turns. All 12 task cells completed: light solo and
+delegated arms scored 8/8; heavy solo and delegated arms scored 23/24 median.
+
+This removes the native Grok Build quota block, but it is a new provider arm.
+It does not replace the native `grok-build` result and does not make Grok Build
+equivalent to Codex CLI. Running the same OpenRouter model through Codex would
+measure Codex as the harness and should receive a distinct arm ID.
+
 ### fx
 
 fx exposes a public model catalog without necessarily granting inference access:
@@ -235,6 +261,17 @@ node run.mjs --dry-run
 node run.mjs --phase micro
 node run.mjs --phase task
 node analyze.mjs
+```
+
+For the OpenRouter supplement, use a separate raw directory and manifest:
+
+```bash
+export HARNESS_WEIGHT_MANIFEST="$PWD/manifest-openrouter.json"
+export HARNESS_WEIGHT_RAW_ROOT="$PWD/raw-openrouter"
+export HARNESS_WEIGHT_RUN_ROOT="${TMPDIR:-/tmp}/harness-weight-openrouter-grok"
+node run.mjs --dry-run
+node run.mjs --phase task
+HARNESS_WEIGHT_ANALYSIS_OUTPUT="$PWD/analysis-openrouter-results.json" node analyze.mjs
 ```
 
 To run one arm/task pilot:

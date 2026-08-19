@@ -24,6 +24,7 @@ const luna = data("luna-results.json")
 const lunaLedger = data("luna-outcome-ledger.json")
 const pi = data("pi-results.json")
 const harnessWeight = data("harness-weight-results.json")
+const harnessWeightOpenRouter = data("harness-weight-openrouter-results.json")
 
 assert(mainLedger.runs.length === 35, "main ledger must contain 35 runs")
 assert(lunaLedger.runs.length === 10, "Luna ledger must contain 10 runs")
@@ -43,6 +44,11 @@ assert(harnessWeight.startupWinners.peakTreeRssBytes.harness === "fx", "harness-
 assert(harnessWeight.startupWinners.totalCpuSeconds.harness === "fx", "harness-weight CPU winner mismatch")
 assert(harnessWeight.comparableLunaSolo["pi/light-maintenance"].resources.peakTreeRssBytes.median === 240590848, "harness-weight Pi light RSS mismatch")
 assert(harnessWeight.comparableLunaSolo["codex/heavy-independent-packages"].resources.totalCpuSeconds.median === 12.92, "harness-weight Codex heavy CPU mismatch")
+assert(harnessWeightOpenRouter.studyID === "harness-weight-openrouter-grok-2026-08-20", "OpenRouter supplement study ID mismatch")
+assert(harnessWeightOpenRouter.observed.taskRuns === 12, "OpenRouter supplement run count mismatch")
+assert(harnessWeightOpenRouter.observed.taskDispositionCounts.completed === 12, "OpenRouter supplement completion mismatch")
+assert(harnessWeightOpenRouter.taskByHarnessArchitecture["grok-build-openrouter/solo/heavy-independent-packages"].resources.peakTreeRssBytes.median === 220426240, "OpenRouter solo heavy RSS mismatch")
+assert(harnessWeightOpenRouter.taskByHarnessArchitecture["grok-build-openrouter/subagents-enabled/heavy-independent-packages"].resources.totalCpuSeconds.median === 6.92, "OpenRouter delegated heavy CPU mismatch")
 
 const scoreNumerator = (score) => Number(score.split("/")[0])
 
@@ -196,7 +202,7 @@ for (const ledger of [mainLedger, lunaLedger]) {
   }
 }
 
-const forbidden = JSON.stringify({ main, mainLedger, luna, lunaLedger, pi, harnessWeight })
+const forbidden = JSON.stringify({ main, mainLedger, luna, lunaLedger, pi, harnessWeight, harnessWeightOpenRouter })
 const forbiddenMarkers = [
   ["/", "home", "/"].join(""),
   ["/", "tmp", "/", "opencode", "/"].join(""),

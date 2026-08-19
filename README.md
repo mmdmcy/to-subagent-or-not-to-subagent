@@ -80,6 +80,18 @@ See `docs/harness-weight-report.md`, `docs/harness-weight-thesis.pdf`, and
 `docs/harness-weight-replication.md` for exact setup, commands, model choices,
 quota dispositions, and validity boundaries.
 
+### OpenRouter Grok Supplement
+
+Because the native Grok Build arm exhausted its free quota, a separate
+OpenRouter supplement ran Grok Build with `x-ai/grok-4.6`. All 12 light/heavy
+solo/delegated attempts completed. Median heavy-task peak RSS was 220.4 MB for
+solo and 307.7 MB for delegated; median scores were 23/24 for both. This is
+reported as Grok Build with OpenRouter, not as the native `grok-build` service
+or as a Codex CLI result.
+
+See `docs/harness-weight-openrouter-report.md` and
+`data/harness-weight-openrouter-results.json` for the supplement.
+
 ## Methodological Status
 
 The narrow operational estimand is defensible because the main arms, prompt,
@@ -112,6 +124,9 @@ capacity, narrow hidden checks, and non-OS-enforced isolation. See
 - `data/harness-weight-results.json`: sanitized CPU/RSS startup and task analysis.
 - `docs/harness-weight-report.md`: separate harness-weight report and limitations.
 - `docs/harness-weight-replication.md`: complete replication and troubleshooting guide.
+- `data/harness-weight-openrouter-results.json`: sanitized OpenRouter Grok supplement analysis.
+- `docs/harness-weight-openrouter-report.md`: OpenRouter supplement methods and results.
+- `docs/harness-weight-openrouter-manifest.json`: OpenRouter supplement protocol.
 - `docs/harness-weight-thesis.pdf` and `docs/harness-weight-thesis.tex`: separate follow-up thesis.
 - `docs/harness-weight-manifest.json`: harness-weight protocol and model arms.
 - `scripts/validate-public-data.mjs`: arithmetic and disclosure checks (requires Node.js and `pdftotext`).

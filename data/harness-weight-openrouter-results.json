@@ -1,0 +1,381 @@
+{
+  "studyID": "harness-weight-openrouter-grok-2026-08-20",
+  "manifest": {
+    "microTrials": 0,
+    "taskTrials": 3,
+    "plannedMicroRuns": 0,
+    "plannedTaskRuns": 12,
+    "sampleIntervalMs": 20
+  },
+  "observed": {
+    "microRuns": 0,
+    "taskRuns": 12,
+    "taskDispositionCounts": {
+      "completed": 12
+    }
+  },
+  "startupByHarnessAndMode": {},
+  "taskByHarnessArchitecture": {
+    "grok-build-openrouter/subagents-enabled/heavy-independent-packages": {
+      "harness": "grok-build-openrouter",
+      "architecture": "subagents-enabled",
+      "task": "heavy-independent-packages",
+      "model": "x-ai/grok-4.6",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 23,
+          "median": 23,
+          "q1": 23,
+          "q3": 23,
+          "min": 23,
+          "max": 23
+        },
+        "total": {
+          "n": 3,
+          "mean": 24,
+          "median": 24,
+          "q1": 24,
+          "q3": 24,
+          "min": 24,
+          "max": 24
+        },
+        "fraction": 0.9583
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 283992064,
+          "median": 307671040,
+          "q1": 270295040,
+          "q3": 309528576,
+          "min": 232919040,
+          "max": 311386112
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 128050517.333,
+          "median": 128798720,
+          "q1": 126152704,
+          "q3": 130322432,
+          "min": 123506688,
+          "max": 131846144
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 7.307,
+          "median": 6.92,
+          "q1": 6.48,
+          "q3": 7.94,
+          "min": 6.04,
+          "max": 8.96
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 607.562,
+          "median": 692.552,
+          "q1": 546.56,
+          "q3": 711.058,
+          "min": 400.568,
+          "max": 729.565
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 5.667,
+          "median": 6,
+          "q1": 5.5,
+          "q3": 6,
+          "min": 5,
+          "max": 6
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 90.667,
+          "median": 91,
+          "q1": 89,
+          "q3": 92.5,
+          "min": 87,
+          "max": 94
+        }
+      }
+    },
+    "grok-build-openrouter/subagents-enabled/light-maintenance": {
+      "harness": "grok-build-openrouter",
+      "architecture": "subagents-enabled",
+      "task": "light-maintenance",
+      "model": "x-ai/grok-4.6",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "total": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "fraction": 1
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 180294997.333,
+          "median": 163610624,
+          "q1": 163409920,
+          "q3": 188837888,
+          "min": 163209216,
+          "max": 214065152
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 107981482.667,
+          "median": 107921408,
+          "q1": 107837440,
+          "q3": 108095488,
+          "min": 107753472,
+          "max": 108269568
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 0.567,
+          "median": 0.6,
+          "q1": 0.545,
+          "q3": 0.605,
+          "min": 0.49,
+          "max": 0.61
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 29.257,
+          "median": 29.099,
+          "q1": 28.258,
+          "q3": 30.177,
+          "min": 27.418,
+          "max": 31.254
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 4.333,
+          "median": 4,
+          "q1": 4,
+          "q3": 4.5,
+          "min": 4,
+          "max": 5
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 65.667,
+          "median": 67,
+          "q1": 63.5,
+          "q3": 68.5,
+          "min": 60,
+          "max": 70
+        }
+      }
+    },
+    "grok-build-openrouter/solo/heavy-independent-packages": {
+      "harness": "grok-build-openrouter",
+      "architecture": "solo",
+      "task": "heavy-independent-packages",
+      "model": "x-ai/grok-4.6",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 22.667,
+          "median": 23,
+          "q1": 22.5,
+          "q3": 23,
+          "min": 22,
+          "max": 23
+        },
+        "total": {
+          "n": 3,
+          "mean": 24,
+          "median": 24,
+          "q1": 24,
+          "q3": 24,
+          "min": 24,
+          "max": 24
+        },
+        "fraction": 0.9444
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 220401664,
+          "median": 220426240,
+          "q1": 219566080,
+          "q3": 221249536,
+          "min": 218705920,
+          "max": 222072832
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 110432256,
+          "median": 110424064,
+          "q1": 110278656,
+          "q3": 110581760,
+          "min": 110133248,
+          "max": 110739456
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 1.45,
+          "median": 1.41,
+          "q1": 1.405,
+          "q3": 1.475,
+          "min": 1.4,
+          "max": 1.54
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 385.183,
+          "median": 380.747,
+          "q1": 360.292,
+          "q3": 407.856,
+          "min": 339.837,
+          "max": 434.966
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 4.333,
+          "median": 4,
+          "q1": 4,
+          "q3": 4.5,
+          "min": 4,
+          "max": 5
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 72.667,
+          "median": 74,
+          "q1": 72,
+          "q3": 74,
+          "min": 70,
+          "max": 74
+        }
+      }
+    },
+    "grok-build-openrouter/solo/light-maintenance": {
+      "harness": "grok-build-openrouter",
+      "architecture": "solo",
+      "task": "light-maintenance",
+      "model": "x-ai/grok-4.6",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "total": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "fraction": 1
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 195410602.667,
+          "median": 213872640,
+          "q1": 185587712,
+          "q3": 214464512,
+          "min": 157302784,
+          "max": 215056384
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 107196416,
+          "median": 107118592,
+          "q1": 107081728,
+          "q3": 107272192,
+          "min": 107044864,
+          "max": 107425792
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 0.54,
+          "median": 0.54,
+          "q1": 0.525,
+          "q3": 0.555,
+          "min": 0.51,
+          "max": 0.57
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 25.882,
+          "median": 27.041,
+          "q1": 23.75,
+          "q3": 28.593,
+          "min": 20.459,
+          "max": 30.145
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 4,
+          "median": 4,
+          "q1": 4,
+          "q3": 4,
+          "min": 4,
+          "max": 4
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 66.333,
+          "median": 66,
+          "q1": 65.5,
+          "q3": 67,
+          "min": 65,
+          "max": 68
+        }
+      }
+    }
+  },
+  "comparableLunaSolo": {},
+  "delegationDeltas": {},
+  "startupWinners": {
+    "peakTreeRssBytes": null,
+    "totalCpuSeconds": null,
+    "wallSeconds": null
+  },
+  "interpretation": {
+    "startup": "The startup winner is the harness with the lowest median fresh-process metric; this does not measure an active agent session.",
+    "task": "Task resource comparisons are descriptive because model-provider behavior, tool use, delegation, and task completion differ. Luna-max solo comparisons are the closest matched task subset.",
+    "fx": "fx uses its native zai/glm-5.2 model and has no comparable delegation arm in this CLI version.",
+    "grok": "Grok Build task coverage is quota-censored after the initial successful request and is not used for stable repeated-task ranking."
+  }
+}

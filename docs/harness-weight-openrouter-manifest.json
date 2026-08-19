@@ -1,0 +1,44 @@
+{
+  "studyID": "harness-weight-openrouter-grok-2026-08-20",
+  "date": "2026-08-20",
+  "orderSeed": 8202026,
+  "microTrials": 0,
+  "taskTrials": 3,
+  "sampleIntervalMs": 20,
+  "timeoutSeconds": 3600,
+  "killGraceSeconds": 30000,
+  "modelFamily": "Grok 4.6 through OpenRouter",
+  "tasks": [
+    {
+      "id": "light-maintenance",
+      "category": "everyday maintenance",
+      "source": "source/light",
+      "grader": "light-hidden.mjs",
+      "prompt": "Read the root README.md and complete the maintenance task exactly as specified. Work autonomously, inspect the relevant files, make the smallest correct implementation, run the available checks, and finish with a concise summary. Do not ask questions or use delegation for this task."
+    },
+    {
+      "id": "heavy-independent-packages",
+      "category": "heavyweight coding task",
+      "source": "../source/combined",
+      "clarifiedComprehension": "../source-pi/combined/comprehension/README.md",
+      "grader": "existing-cross-harness",
+      "prompt": "Complete all three independent tasks described in the root README.md. Work autonomously, inspect each package, make only requested changes, and run available checks. Finish only after all three package tasks are complete, then concisely report changes and checks."
+    }
+  ],
+  "arms": [
+    {
+      "id": "grok-build-openrouter-grok-4.6-solo",
+      "harness": "grok-build-openrouter",
+      "model": "x-ai/grok-4.6",
+      "architecture": "solo",
+      "maxTurns": 64
+    },
+    {
+      "id": "grok-build-openrouter-grok-4.6-delegated",
+      "harness": "grok-build-openrouter",
+      "model": "x-ai/grok-4.6",
+      "architecture": "subagents-enabled",
+      "maxTurns": 64
+    }
+  ]
+}
