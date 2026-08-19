@@ -60,6 +60,24 @@ Yes, GPT-5.6 models were tested in Pi in the historical August 12-13 study:
 Pi was a conceptual replication, not a full rerun of the later Cursor/OpenCode
 matrix.
 
+## Harness Weight Follow-Up
+
+The separate harness-weight study measured local CPU and memory across OpenCode,
+Codex CLI, Cursor Agent CLI, Pi, Grok Build, and Vercel fx. It used fresh
+`--version`/`--help` startup trials plus light and heavyweight coding tasks.
+GPT-5.6 Luna max was used for the matched OpenCode, Codex, Cursor, and Pi task
+arms. fx used its native `zai/glm-5.2` model, and Grok Build used Grok 4.6.
+
+The cold-start minimum was fx at approximately 1.47 MB median peak RSS. In the
+matched Luna-max solo task subset, Pi had the lowest median process-tree RSS;
+Codex used the least heavy-task CPU; and Cursor completed the heavy task fastest.
+These are separate endpoints, not one universal harness ranking. fx completed
+the light task but timed out on all three heavyweight attempts. Grok Build was
+quota-censored after its initial successful requests.
+
+See `docs/harness-weight-report.md`, `docs/harness-weight-thesis.pdf`, and
+`data/harness-weight-results.json` for the complete sanitized analysis.
+
 ## Methodological Status
 
 The narrow operational estimand is defensible because the main arms, prompt,
@@ -89,6 +107,10 @@ capacity, narrow hidden checks, and non-OS-enforced isolation. See
 - `docs/RAW-DATA-DISPOSITION.md`: what is withheld and why.
 - `docs/study-report.md`: sanitized technical report.
 - `docs/thesis.pdf` and `docs/thesis.tex`: sanitized thesis-style report.
+- `data/harness-weight-results.json`: sanitized CPU/RSS startup and task analysis.
+- `docs/harness-weight-report.md`: separate harness-weight report and limitations.
+- `docs/harness-weight-thesis.pdf` and `docs/harness-weight-thesis.tex`: separate follow-up thesis.
+- `docs/harness-weight-manifest.json`: harness-weight protocol and model arms.
 - `scripts/validate-public-data.mjs`: arithmetic and disclosure checks (requires Node.js and `pdftotext`).
 
 ## Reproduce The Public Checks
@@ -106,6 +128,10 @@ The untouched security fixture is intentionally incomplete. Its public suite is
 expected to fail on two of three checks until an agent repairs it; that failure
 is part of the benchmark input, not a release validation failure. The fixture is
 not production authentication code.
+
+The harness-weight light fixture is also intentionally incomplete. Its two
+public tests are expected to fail before an agent implements the task; hidden
+checks remain withheld.
 
 The private archive used for the original analysis is not included because it
 contains full model transcripts, encrypted/internal reasoning payloads, session

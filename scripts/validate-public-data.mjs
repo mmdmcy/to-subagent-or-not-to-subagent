@@ -23,6 +23,7 @@ const mainLedger = data("main-outcome-ledger.json")
 const luna = data("luna-results.json")
 const lunaLedger = data("luna-outcome-ledger.json")
 const pi = data("pi-results.json")
+const harnessWeight = data("harness-weight-results.json")
 
 assert(mainLedger.runs.length === 35, "main ledger must contain 35 runs")
 assert(lunaLedger.runs.length === 10, "Luna ledger must contain 10 runs")
@@ -32,6 +33,16 @@ assert(main.summaries.find((item) => item.arm === "opencode-sol-xhigh-solo")?.sc
 assert(luna.randomizedContrast.aggregateReductionPercent === 3.66, "Luna aggregate contrast mismatch")
 assert(luna.randomizedContrast.fasterBlocks === 2, "Luna faster-block count mismatch")
 assert(pi.trials.length === 6, "Pi ledger must contain six runs")
+assert(harnessWeight.studyID === "harness-weight-2026-08-19", "harness-weight study ID mismatch")
+assert(harnessWeight.observed.microRuns === 240, "harness-weight micro run count mismatch")
+assert(harnessWeight.observed.taskRuns === 66, "harness-weight task run count mismatch")
+assert(harnessWeight.observed.taskDispositionCounts.completed === 52, "harness-weight completed count mismatch")
+assert(harnessWeight.observed.taskDispositionCounts.timeout === 3, "harness-weight timeout count mismatch")
+assert(harnessWeight.observed.taskDispositionCounts["provider-blocked"] === 11, "harness-weight provider-blocked count mismatch")
+assert(harnessWeight.startupWinners.peakTreeRssBytes.harness === "fx", "harness-weight RSS winner mismatch")
+assert(harnessWeight.startupWinners.totalCpuSeconds.harness === "fx", "harness-weight CPU winner mismatch")
+assert(harnessWeight.comparableLunaSolo["pi/light-maintenance"].resources.peakTreeRssBytes.median === 240590848, "harness-weight Pi light RSS mismatch")
+assert(harnessWeight.comparableLunaSolo["codex/heavy-independent-packages"].resources.totalCpuSeconds.median === 12.92, "harness-weight Codex heavy CPU mismatch")
 
 const scoreNumerator = (score) => Number(score.split("/")[0])
 
@@ -185,7 +196,7 @@ for (const ledger of [mainLedger, lunaLedger]) {
   }
 }
 
-const forbidden = JSON.stringify({ main, mainLedger, luna, lunaLedger, pi })
+const forbidden = JSON.stringify({ main, mainLedger, luna, lunaLedger, pi, harnessWeight })
 const forbiddenMarkers = [
   ["/", "home", "/"].join(""),
   ["/", "tmp", "/", "opencode", "/"].join(""),
@@ -215,17 +226,19 @@ const scan = (directory) => {
   }
 }
 scan(root)
-try {
-  const pdf = path.join(root, "docs", "thesis.pdf")
-  const text = execFileSync("pdftotext", ["-layout", pdf, "-"], { encoding: "utf8" })
-  assertCleanText(pdf, text)
-} catch (error) {
-  if (error?.code === "ENOENT") throw new Error("pdftotext is required for the thesis PDF disclosure scan")
-  else throw error
+for (const pdf of [path.join(root, "docs", "thesis.pdf"), path.join(root, "docs", "harness-weight-thesis.pdf")]) {
+  try {
+    const text = execFileSync("pdftotext", ["-layout", pdf, "-"], { encoding: "utf8" })
+    assertCleanText(pdf, text)
+  } catch (error) {
+    if (error?.code === "ENOENT") throw new Error("pdftotext is required for the thesis PDF disclosure scan")
+    else throw error
+  }
 }
 
 console.log("Public data validation passed")
 console.log(`Main runs: ${mainLedger.runs.length}`)
 console.log(`Luna supplement runs: ${lunaLedger.runs.length}`)
 console.log(`Pi runs: ${pi.trials.length}`)
+console.log(`Harness-weight tasks: ${harnessWeight.observed.taskRuns}`)
 console.log(`Selected main arm: ${main.selection.operatingRuleSelection}`)

@@ -1,0 +1,3266 @@
+{
+  "studyID": "harness-weight-2026-08-19",
+  "manifest": {
+    "microTrials": 20,
+    "taskTrials": 3,
+    "plannedMicroRuns": 240,
+    "plannedTaskRuns": 66,
+    "sampleIntervalMs": 20
+  },
+  "observed": {
+    "microRuns": 240,
+    "taskRuns": 66,
+    "taskDispositionCounts": {
+      "completed": 52,
+      "timeout": 3,
+      "provider-blocked": 11
+    }
+  },
+  "startupByHarnessAndMode": {
+    "codex/help": {
+      "harness": "codex",
+      "mode": "help",
+      "n": 20,
+      "completed": 20,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 20,
+          "mean": 50991513.6,
+          "median": 50501632,
+          "q1": 50295808,
+          "q3": 52007936,
+          "min": 50094080,
+          "max": 52146176
+        },
+        "peakProcessRssBytes": {
+          "n": 20,
+          "mean": 50330624,
+          "median": 50327552,
+          "q1": 50284544,
+          "q3": 50420736,
+          "min": 50094080,
+          "max": 50556928
+        },
+        "totalCpuSeconds": {
+          "n": 20,
+          "mean": 0.085,
+          "median": 0.08,
+          "q1": 0.08,
+          "q3": 0.09,
+          "min": 0.07,
+          "max": 0.1
+        },
+        "wallSeconds": {
+          "n": 20,
+          "mean": 0.247,
+          "median": 0.247,
+          "q1": 0.23,
+          "q3": 0.259,
+          "min": 0.219,
+          "max": 0.293
+        },
+        "peakProcesses": {
+          "n": 20,
+          "mean": 2,
+          "median": 2,
+          "q1": 2,
+          "q3": 2,
+          "min": 2,
+          "max": 2
+        },
+        "peakThreads": {
+          "n": 20,
+          "mean": 7,
+          "median": 7,
+          "q1": 7,
+          "q3": 7,
+          "min": 7,
+          "max": 7
+        }
+      }
+    },
+    "codex/version": {
+      "harness": "codex",
+      "mode": "version",
+      "n": 20,
+      "completed": 20,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 20,
+          "mean": 50950758.4,
+          "median": 50483200,
+          "q1": 50355200,
+          "q3": 51677184,
+          "min": 50049024,
+          "max": 52228096
+        },
+        "peakProcessRssBytes": {
+          "n": 20,
+          "mean": 50364006.4,
+          "median": 50391040,
+          "q1": 50302976,
+          "q3": 50481152,
+          "min": 50049024,
+          "max": 50520064
+        },
+        "totalCpuSeconds": {
+          "n": 20,
+          "mean": 0.086,
+          "median": 0.09,
+          "q1": 0.08,
+          "q3": 0.09,
+          "min": 0.06,
+          "max": 0.1
+        },
+        "wallSeconds": {
+          "n": 20,
+          "mean": 0.249,
+          "median": 0.234,
+          "q1": 0.225,
+          "q3": 0.247,
+          "min": 0.218,
+          "max": 0.446
+        },
+        "peakProcesses": {
+          "n": 20,
+          "mean": 1.95,
+          "median": 2,
+          "q1": 2,
+          "q3": 2,
+          "min": 1,
+          "max": 2
+        },
+        "peakThreads": {
+          "n": 20,
+          "mean": 6.75,
+          "median": 7,
+          "q1": 7,
+          "q3": 7,
+          "min": 1,
+          "max": 8
+        }
+      }
+    },
+    "cursor/help": {
+      "harness": "cursor",
+      "mode": "help",
+      "n": 20,
+      "completed": 20,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 20,
+          "mean": 206399283.2,
+          "median": 206370816,
+          "q1": 205486080,
+          "q3": 207179776,
+          "min": 204869632,
+          "max": 207880192
+        },
+        "peakProcessRssBytes": {
+          "n": 20,
+          "mean": 205553049.6,
+          "median": 205463552,
+          "q1": 205249536,
+          "q3": 205929472,
+          "min": 204869632,
+          "max": 206147584
+        },
+        "totalCpuSeconds": {
+          "n": 20,
+          "mean": 1.785,
+          "median": 1.76,
+          "q1": 1.74,
+          "q3": 1.78,
+          "min": 1.68,
+          "max": 2
+        },
+        "wallSeconds": {
+          "n": 20,
+          "mean": 2.22,
+          "median": 1.7,
+          "q1": 1.638,
+          "q3": 1.808,
+          "min": 1.62,
+          "max": 6.631
+        },
+        "peakProcesses": {
+          "n": 20,
+          "mean": 2,
+          "median": 2,
+          "q1": 2,
+          "q3": 2,
+          "min": 2,
+          "max": 2
+        },
+        "peakThreads": {
+          "n": 20,
+          "mean": 15.8,
+          "median": 16,
+          "q1": 16,
+          "q3": 16,
+          "min": 12,
+          "max": 16
+        }
+      }
+    },
+    "cursor/version": {
+      "harness": "cursor",
+      "mode": "version",
+      "n": 20,
+      "completed": 20,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 20,
+          "mean": 206303641.6,
+          "median": 206061568,
+          "q1": 205806592,
+          "q3": 207065088,
+          "min": 204836864,
+          "max": 207675392
+        },
+        "peakProcessRssBytes": {
+          "n": 20,
+          "mean": 205612032,
+          "median": 205785088,
+          "q1": 205304832,
+          "q3": 205949952,
+          "min": 204836864,
+          "max": 206192640
+        },
+        "totalCpuSeconds": {
+          "n": 20,
+          "mean": 1.769,
+          "median": 1.74,
+          "q1": 1.718,
+          "q3": 1.772,
+          "min": 1.67,
+          "max": 1.98
+        },
+        "wallSeconds": {
+          "n": 20,
+          "mean": 2.194,
+          "median": 1.676,
+          "q1": 1.64,
+          "q3": 1.81,
+          "min": 1.597,
+          "max": 6.492
+        },
+        "peakProcesses": {
+          "n": 20,
+          "mean": 2,
+          "median": 2,
+          "q1": 2,
+          "q3": 2,
+          "min": 2,
+          "max": 2
+        },
+        "peakThreads": {
+          "n": 20,
+          "mean": 15.8,
+          "median": 16,
+          "q1": 16,
+          "q3": 16,
+          "min": 12,
+          "max": 16
+        }
+      }
+    },
+    "fx/help": {
+      "harness": "fx",
+      "mode": "help",
+      "n": 20,
+      "completed": 20,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 20,
+          "mean": 1437696,
+          "median": 1437696,
+          "q1": 1437696,
+          "q3": 1437696,
+          "min": 1437696,
+          "max": 1437696
+        },
+        "peakProcessRssBytes": {
+          "n": 20,
+          "mean": 1437696,
+          "median": 1437696,
+          "q1": 1437696,
+          "q3": 1437696,
+          "min": 1437696,
+          "max": 1437696
+        },
+        "totalCpuSeconds": {
+          "n": 20,
+          "mean": 0,
+          "median": 0,
+          "q1": 0,
+          "q3": 0,
+          "min": 0,
+          "max": 0
+        },
+        "wallSeconds": {
+          "n": 20,
+          "mean": 0.216,
+          "median": 0.209,
+          "q1": 0.204,
+          "q3": 0.219,
+          "min": 0.198,
+          "max": 0.28
+        },
+        "peakProcesses": {
+          "n": 20,
+          "mean": 0,
+          "median": 0,
+          "q1": 0,
+          "q3": 0,
+          "min": 0,
+          "max": 0
+        },
+        "peakThreads": {
+          "n": 20,
+          "mean": 0,
+          "median": 0,
+          "q1": 0,
+          "q3": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    "fx/version": {
+      "harness": "fx",
+      "mode": "version",
+      "n": 20,
+      "completed": 20,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 20,
+          "mean": 1503232,
+          "median": 1503232,
+          "q1": 1503232,
+          "q3": 1503232,
+          "min": 1503232,
+          "max": 1503232
+        },
+        "peakProcessRssBytes": {
+          "n": 20,
+          "mean": 1503232,
+          "median": 1503232,
+          "q1": 1503232,
+          "q3": 1503232,
+          "min": 1503232,
+          "max": 1503232
+        },
+        "totalCpuSeconds": {
+          "n": 20,
+          "mean": 0,
+          "median": 0,
+          "q1": 0,
+          "q3": 0,
+          "min": 0,
+          "max": 0
+        },
+        "wallSeconds": {
+          "n": 20,
+          "mean": 0.223,
+          "median": 0.22,
+          "q1": 0.208,
+          "q3": 0.225,
+          "min": 0.197,
+          "max": 0.306
+        },
+        "peakProcesses": {
+          "n": 20,
+          "mean": 0,
+          "median": 0,
+          "q1": 0,
+          "q3": 0,
+          "min": 0,
+          "max": 0
+        },
+        "peakThreads": {
+          "n": 20,
+          "mean": 0,
+          "median": 0,
+          "q1": 0,
+          "q3": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    "grok-build/help": {
+      "harness": "grok-build",
+      "mode": "help",
+      "n": 20,
+      "completed": 20,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 20,
+          "mean": 26773094.4,
+          "median": 26800128,
+          "q1": 26800128,
+          "q3": 26800128,
+          "min": 26595328,
+          "max": 26800128
+        },
+        "peakProcessRssBytes": {
+          "n": 20,
+          "mean": 26773094.4,
+          "median": 26800128,
+          "q1": 26800128,
+          "q3": 26800128,
+          "min": 26595328,
+          "max": 26800128
+        },
+        "totalCpuSeconds": {
+          "n": 20,
+          "mean": 0.023,
+          "median": 0.02,
+          "q1": 0.02,
+          "q3": 0.022,
+          "min": 0.02,
+          "max": 0.03
+        },
+        "wallSeconds": {
+          "n": 20,
+          "mean": 0.221,
+          "median": 0.22,
+          "q1": 0.21,
+          "q3": 0.226,
+          "min": 0.202,
+          "max": 0.252
+        },
+        "peakProcesses": {
+          "n": 20,
+          "mean": 2,
+          "median": 2,
+          "q1": 2,
+          "q3": 2,
+          "min": 2,
+          "max": 2
+        },
+        "peakThreads": {
+          "n": 20,
+          "mean": 2,
+          "median": 2,
+          "q1": 2,
+          "q3": 2,
+          "min": 2,
+          "max": 2
+        }
+      }
+    },
+    "grok-build/version": {
+      "harness": "grok-build",
+      "mode": "version",
+      "n": 20,
+      "completed": 20,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 20,
+          "mean": 27581644.8,
+          "median": 27631616,
+          "q1": 27471872,
+          "q3": 27668480,
+          "min": 27406336,
+          "max": 27668480
+        },
+        "peakProcessRssBytes": {
+          "n": 20,
+          "mean": 27581644.8,
+          "median": 27631616,
+          "q1": 27471872,
+          "q3": 27668480,
+          "min": 27406336,
+          "max": 27668480
+        },
+        "totalCpuSeconds": {
+          "n": 20,
+          "mean": 0.021,
+          "median": 0.02,
+          "q1": 0.02,
+          "q3": 0.02,
+          "min": 0.02,
+          "max": 0.03
+        },
+        "wallSeconds": {
+          "n": 20,
+          "mean": 0.223,
+          "median": 0.217,
+          "q1": 0.213,
+          "q3": 0.227,
+          "min": 0.204,
+          "max": 0.261
+        },
+        "peakProcesses": {
+          "n": 20,
+          "mean": 2,
+          "median": 2,
+          "q1": 2,
+          "q3": 2,
+          "min": 2,
+          "max": 2
+        },
+        "peakThreads": {
+          "n": 20,
+          "mean": 2,
+          "median": 2,
+          "q1": 2,
+          "q3": 2,
+          "min": 2,
+          "max": 2
+        }
+      }
+    },
+    "opencode/help": {
+      "harness": "opencode",
+      "mode": "help",
+      "n": 20,
+      "completed": 20,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 20,
+          "mean": 187637555.2,
+          "median": 187492352,
+          "q1": 187123712,
+          "q3": 188038144,
+          "min": 186904576,
+          "max": 189063168
+        },
+        "peakProcessRssBytes": {
+          "n": 20,
+          "mean": 187489075.2,
+          "median": 187445248,
+          "q1": 187123712,
+          "q3": 187816960,
+          "min": 186904576,
+          "max": 188383232
+        },
+        "totalCpuSeconds": {
+          "n": 20,
+          "mean": 1.868,
+          "median": 1.845,
+          "q1": 1.83,
+          "q3": 1.862,
+          "min": 1.81,
+          "max": 2.11
+        },
+        "wallSeconds": {
+          "n": 20,
+          "mean": 1.702,
+          "median": 1.67,
+          "q1": 1.662,
+          "q3": 1.691,
+          "min": 1.63,
+          "max": 1.978
+        },
+        "peakProcesses": {
+          "n": 20,
+          "mean": 2,
+          "median": 2,
+          "q1": 2,
+          "q3": 2,
+          "min": 2,
+          "max": 2
+        },
+        "peakThreads": {
+          "n": 20,
+          "mean": 11.2,
+          "median": 11,
+          "q1": 11,
+          "q3": 11,
+          "min": 11,
+          "max": 12
+        }
+      }
+    },
+    "opencode/version": {
+      "harness": "opencode",
+      "mode": "version",
+      "n": 20,
+      "completed": 20,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 20,
+          "mean": 174866227.2,
+          "median": 174829568,
+          "q1": 174468096,
+          "q3": 174974976,
+          "min": 174055424,
+          "max": 176230400
+        },
+        "peakProcessRssBytes": {
+          "n": 20,
+          "mean": 174819328,
+          "median": 174829568,
+          "q1": 174468096,
+          "q3": 174974976,
+          "min": 174055424,
+          "max": 176230400
+        },
+        "totalCpuSeconds": {
+          "n": 20,
+          "mean": 1.782,
+          "median": 1.765,
+          "q1": 1.738,
+          "q3": 1.79,
+          "min": 1.69,
+          "max": 2.06
+        },
+        "wallSeconds": {
+          "n": 20,
+          "mean": 1.66,
+          "median": 1.641,
+          "q1": 1.61,
+          "q3": 1.657,
+          "min": 1.497,
+          "max": 2.029
+        },
+        "peakProcesses": {
+          "n": 20,
+          "mean": 2,
+          "median": 2,
+          "q1": 2,
+          "q3": 2,
+          "min": 2,
+          "max": 2
+        },
+        "peakThreads": {
+          "n": 20,
+          "mean": 11.5,
+          "median": 11.5,
+          "q1": 11,
+          "q3": 12,
+          "min": 11,
+          "max": 12
+        }
+      }
+    },
+    "pi/help": {
+      "harness": "pi",
+      "mode": "help",
+      "n": 20,
+      "completed": 20,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 20,
+          "mean": 159074918.4,
+          "median": 158877696,
+          "q1": 158347264,
+          "q3": 159521792,
+          "min": 156778496,
+          "max": 163655680
+        },
+        "peakProcessRssBytes": {
+          "n": 20,
+          "mean": 158400512,
+          "median": 158439424,
+          "q1": 157674496,
+          "q3": 158819328,
+          "min": 156168192,
+          "max": 163655680
+        },
+        "totalCpuSeconds": {
+          "n": 20,
+          "mean": 2.663,
+          "median": 2.62,
+          "q1": 2.6,
+          "q3": 2.64,
+          "min": 2.55,
+          "max": 3.1
+        },
+        "wallSeconds": {
+          "n": 20,
+          "mean": 2.425,
+          "median": 2.361,
+          "q1": 2.346,
+          "q3": 2.401,
+          "min": 2.284,
+          "max": 2.988
+        },
+        "peakProcesses": {
+          "n": 20,
+          "mean": 2,
+          "median": 2,
+          "q1": 2,
+          "q3": 2,
+          "min": 2,
+          "max": 2
+        },
+        "peakThreads": {
+          "n": 20,
+          "mean": 15.6,
+          "median": 16,
+          "q1": 16,
+          "q3": 16,
+          "min": 12,
+          "max": 16
+        }
+      }
+    },
+    "pi/version": {
+      "harness": "pi",
+      "mode": "version",
+      "n": 20,
+      "completed": 20,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 20,
+          "mean": 157097779.2,
+          "median": 156868608,
+          "q1": 156645376,
+          "q3": 157586432,
+          "min": 155348992,
+          "max": 159887360
+        },
+        "peakProcessRssBytes": {
+          "n": 20,
+          "mean": 156667494.4,
+          "median": 156784640,
+          "q1": 156573696,
+          "q3": 157064192,
+          "min": 154439680,
+          "max": 158150656
+        },
+        "totalCpuSeconds": {
+          "n": 20,
+          "mean": 2.469,
+          "median": 2.405,
+          "q1": 2.368,
+          "q3": 2.482,
+          "min": 2.31,
+          "max": 2.93
+        },
+        "wallSeconds": {
+          "n": 20,
+          "mean": 2.33,
+          "median": 2.25,
+          "q1": 2.221,
+          "q3": 2.3,
+          "min": 2.14,
+          "max": 2.993
+        },
+        "peakProcesses": {
+          "n": 20,
+          "mean": 2,
+          "median": 2,
+          "q1": 2,
+          "q3": 2,
+          "min": 2,
+          "max": 2
+        },
+        "peakThreads": {
+          "n": 20,
+          "mean": 8.05,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 9
+        }
+      }
+    }
+  },
+  "taskByHarnessArchitecture": {
+    "codex/multi-agent/heavy-independent-packages": {
+      "harness": "codex",
+      "architecture": "multi-agent",
+      "task": "heavy-independent-packages",
+      "model": "gpt-5.6-luna",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 22,
+          "median": 22,
+          "q1": 22,
+          "q3": 22,
+          "min": 22,
+          "max": 22
+        },
+        "total": {
+          "n": 3,
+          "mean": 24,
+          "median": 24,
+          "q1": 24,
+          "q3": 24,
+          "min": 24,
+          "max": 24
+        },
+        "fraction": 0.9167
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 747397120,
+          "median": 709005312,
+          "q1": 682584064,
+          "q3": 793014272,
+          "min": 656162816,
+          "max": 877023232
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 216173226.667,
+          "median": 215482368,
+          "q1": 215138304,
+          "q3": 216862720,
+          "min": 214794240,
+          "max": 218243072
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 32.187,
+          "median": 31.09,
+          "q1": 30.35,
+          "q3": 33.475,
+          "min": 29.61,
+          "max": 35.86
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 1005.003,
+          "median": 999.266,
+          "q1": 989.594,
+          "q3": 1017.543,
+          "min": 979.923,
+          "max": 1035.821
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 32,
+          "median": 27,
+          "q1": 25,
+          "q3": 36.5,
+          "min": 23,
+          "max": 46
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 95.333,
+          "median": 92,
+          "q1": 88,
+          "q3": 101,
+          "min": 84,
+          "max": 110
+        }
+      }
+    },
+    "codex/multi-agent/light-maintenance": {
+      "harness": "codex",
+      "architecture": "multi-agent",
+      "task": "light-maintenance",
+      "model": "gpt-5.6-luna",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "total": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "fraction": 1
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 421156181.333,
+          "median": 444174336,
+          "q1": 408598528,
+          "q3": 445222912,
+          "min": 373022720,
+          "max": 446271488
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 193725781.333,
+          "median": 193257472,
+          "q1": 192886784,
+          "q3": 194330624,
+          "min": 192516096,
+          "max": 195403776
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 4.977,
+          "median": 4.95,
+          "q1": 4.925,
+          "q3": 5.015,
+          "min": 4.9,
+          "max": 5.08
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 93.865,
+          "median": 92.898,
+          "q1": 89.409,
+          "q3": 97.838,
+          "min": 85.92,
+          "max": 102.777
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 9.667,
+          "median": 10,
+          "q1": 9,
+          "q3": 10.5,
+          "min": 8,
+          "max": 11
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 72,
+          "median": 71,
+          "q1": 67,
+          "q3": 76.5,
+          "min": 63,
+          "max": 82
+        }
+      }
+    },
+    "codex/solo/heavy-independent-packages": {
+      "harness": "codex",
+      "architecture": "solo",
+      "task": "heavy-independent-packages",
+      "model": "gpt-5.6-luna",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 22.333,
+          "median": 22,
+          "q1": 22,
+          "q3": 22.5,
+          "min": 22,
+          "max": 23
+        },
+        "total": {
+          "n": 3,
+          "mean": 24,
+          "median": 24,
+          "q1": 24,
+          "q3": 24,
+          "min": 24,
+          "max": 24
+        },
+        "fraction": 0.9306
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 644796416,
+          "median": 608858112,
+          "q1": 608761856,
+          "q3": 662861824,
+          "min": 608665600,
+          "max": 716865536
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 193769472,
+          "median": 194072576,
+          "q1": 192983040,
+          "q3": 194707456,
+          "min": 191893504,
+          "max": 195342336
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 12.96,
+          "median": 12.92,
+          "q1": 12.48,
+          "q3": 13.42,
+          "min": 12.04,
+          "max": 13.92
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 851.842,
+          "median": 851.748,
+          "q1": 825.482,
+          "q3": 878.156,
+          "min": 799.215,
+          "max": 904.564
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 20.333,
+          "median": 21,
+          "q1": 19.5,
+          "q3": 21.5,
+          "min": 18,
+          "max": 22
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 91.667,
+          "median": 96,
+          "q1": 89.5,
+          "q3": 96,
+          "min": 83,
+          "max": 96
+        }
+      }
+    },
+    "codex/solo/light-maintenance": {
+      "harness": "codex",
+      "architecture": "solo",
+      "task": "light-maintenance",
+      "model": "gpt-5.6-luna",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "total": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "fraction": 1
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 432704170.667,
+          "median": 441094144,
+          "q1": 425631744,
+          "q3": 443971584,
+          "min": 410169344,
+          "max": 446849024
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 193239722.667,
+          "median": 193146880,
+          "q1": 191688704,
+          "q3": 194744320,
+          "min": 190230528,
+          "max": 196341760
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 4.777,
+          "median": 4.79,
+          "q1": 4.51,
+          "q3": 5.05,
+          "min": 4.23,
+          "max": 5.31
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 78.531,
+          "median": 72.712,
+          "q1": 68.846,
+          "q3": 85.307,
+          "min": 64.98,
+          "max": 97.902
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 10.333,
+          "median": 10,
+          "q1": 9.5,
+          "q3": 11,
+          "min": 9,
+          "max": 12
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 70.667,
+          "median": 70,
+          "q1": 67.5,
+          "q3": 73.5,
+          "min": 65,
+          "max": 77
+        }
+      }
+    },
+    "cursor/task-enabled/heavy-independent-packages": {
+      "harness": "cursor",
+      "architecture": "task-enabled",
+      "task": "heavy-independent-packages",
+      "model": "gpt-5.6-luna-max",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 22.333,
+          "median": 22,
+          "q1": 22,
+          "q3": 22.5,
+          "min": 22,
+          "max": 23
+        },
+        "total": {
+          "n": 3,
+          "mean": 24,
+          "median": 24,
+          "q1": 24,
+          "q3": 24,
+          "min": 24,
+          "max": 24
+        },
+        "fraction": 0.9306
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 580866048,
+          "median": 507564032,
+          "q1": 487405568,
+          "q3": 637675520,
+          "min": 467247104,
+          "max": 767787008
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 284958720,
+          "median": 289349632,
+          "q1": 282267648,
+          "q3": 289845248,
+          "min": 275185664,
+          "max": 290340864
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 40.273,
+          "median": 41.16,
+          "q1": 39.79,
+          "q3": 41.2,
+          "min": 38.42,
+          "max": 41.24
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 627.953,
+          "median": 596.118,
+          "q1": 556.381,
+          "q3": 683.608,
+          "min": 516.644,
+          "max": 771.098
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 10.667,
+          "median": 10,
+          "q1": 9.5,
+          "q3": 11.5,
+          "min": 9,
+          "max": 13
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 59.333,
+          "median": 54,
+          "q1": 50,
+          "q3": 66,
+          "min": 46,
+          "max": 78
+        }
+      }
+    },
+    "cursor/task-enabled/light-maintenance": {
+      "harness": "cursor",
+      "architecture": "task-enabled",
+      "task": "light-maintenance",
+      "model": "gpt-5.6-luna-max",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "total": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "fraction": 1
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 334005589.333,
+          "median": 311017472,
+          "q1": 308813824,
+          "q3": 347703296,
+          "min": 306610176,
+          "max": 384389120
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 283735381.333,
+          "median": 288477184,
+          "q1": 280635392,
+          "q3": 289206272,
+          "min": 272793600,
+          "max": 289935360
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 6.82,
+          "median": 7.09,
+          "q1": 6.535,
+          "q3": 7.24,
+          "min": 5.98,
+          "max": 7.39
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 51.806,
+          "median": 53.839,
+          "q1": 48.371,
+          "q3": 56.257,
+          "min": 42.903,
+          "max": 58.676
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 6,
+          "median": 6,
+          "q1": 6,
+          "q3": 6,
+          "min": 6,
+          "max": 6
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 32.667,
+          "median": 32,
+          "q1": 29,
+          "q3": 36,
+          "min": 26,
+          "max": 40
+        }
+      }
+    },
+    "cursor/solo/heavy-independent-packages": {
+      "harness": "cursor",
+      "architecture": "solo",
+      "task": "heavy-independent-packages",
+      "model": "gpt-5.6-luna-max",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 22,
+          "median": 22,
+          "q1": 22,
+          "q3": 22,
+          "min": 22,
+          "max": 22
+        },
+        "total": {
+          "n": 3,
+          "mean": 24,
+          "median": 24,
+          "q1": 24,
+          "q3": 24,
+          "min": 24,
+          "max": 24
+        },
+        "fraction": 0.9167
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 591440554.667,
+          "median": 564965376,
+          "q1": 554745856,
+          "q3": 614897664,
+          "min": 544526336,
+          "max": 664829952
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 278669994.667,
+          "median": 273670144,
+          "q1": 273162240,
+          "q3": 281677824,
+          "min": 272654336,
+          "max": 289685504
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 18.683,
+          "median": 18.53,
+          "q1": 17.95,
+          "q3": 19.34,
+          "min": 17.37,
+          "max": 20.15
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 482.857,
+          "median": 458.349,
+          "q1": 435.349,
+          "q3": 518.111,
+          "min": 412.348,
+          "max": 577.873
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 11.333,
+          "median": 11,
+          "q1": 10,
+          "q3": 12.5,
+          "min": 9,
+          "max": 14
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 67.333,
+          "median": 71,
+          "q1": 64,
+          "q3": 72.5,
+          "min": 57,
+          "max": 74
+        }
+      }
+    },
+    "cursor/solo/light-maintenance": {
+      "harness": "cursor",
+      "architecture": "solo",
+      "task": "light-maintenance",
+      "model": "gpt-5.6-luna-max",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "total": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "fraction": 1
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 344612864,
+          "median": 363413504,
+          "q1": 333867008,
+          "q3": 364759040,
+          "min": 304320512,
+          "max": 366104576
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 273447594.667,
+          "median": 272723968,
+          "q1": 272474112,
+          "q3": 274059264,
+          "min": 272224256,
+          "max": 275394560
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 6.15,
+          "median": 6.23,
+          "q1": 6.095,
+          "q3": 6.245,
+          "min": 5.96,
+          "max": 6.26
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 58.968,
+          "median": 59.092,
+          "q1": 46.315,
+          "q3": 71.684,
+          "min": 33.538,
+          "max": 84.275
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 6,
+          "median": 6,
+          "q1": 6,
+          "q3": 6,
+          "min": 6,
+          "max": 6
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 30.667,
+          "median": 32,
+          "q1": 29.5,
+          "q3": 32.5,
+          "min": 27,
+          "max": 33
+        }
+      }
+    },
+    "fx/solo/heavy-independent-packages": {
+      "harness": "fx",
+      "architecture": "solo",
+      "task": "heavy-independent-packages",
+      "model": "zai/glm-5.2",
+      "n": 3,
+      "dispositionCounts": {
+        "timeout": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 6,
+          "median": 2,
+          "q1": 2,
+          "q3": 8,
+          "min": 2,
+          "max": 14
+        },
+        "total": {
+          "n": 3,
+          "mean": 24,
+          "median": 24,
+          "q1": 24,
+          "q3": 24,
+          "min": 24,
+          "max": 24
+        },
+        "fraction": 0.25
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 23098709.333,
+          "median": 22069248,
+          "q1": 21692416,
+          "q3": 23990272,
+          "min": 21315584,
+          "max": 25911296
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 23098709.333,
+          "median": 22069248,
+          "q1": 21692416,
+          "q3": 23990272,
+          "min": 21315584,
+          "max": 25911296
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 4.953,
+          "median": 5.04,
+          "q1": 4.815,
+          "q3": 5.135,
+          "min": 4.59,
+          "max": 5.23
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 1800.134,
+          "median": 1800.127,
+          "q1": 1800.121,
+          "q3": 1800.143,
+          "min": 1800.115,
+          "max": 1800.159
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 1,
+          "median": 1,
+          "q1": 1,
+          "q3": 1,
+          "min": 1,
+          "max": 1
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 7.667,
+          "median": 9,
+          "q1": 7,
+          "q3": 9,
+          "min": 5,
+          "max": 9
+        }
+      }
+    },
+    "fx/solo/light-maintenance": {
+      "harness": "fx",
+      "architecture": "solo",
+      "task": "light-maintenance",
+      "model": "zai/glm-5.2",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "total": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "fraction": 1
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 86207146.667,
+          "median": 68087808,
+          "q1": 67698688,
+          "q3": 95655936,
+          "min": 67309568,
+          "max": 123224064
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 52716885.333,
+          "median": 52445184,
+          "q1": 52307968,
+          "q3": 52989952,
+          "min": 52170752,
+          "max": 53534720
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 0.62,
+          "median": 0.71,
+          "q1": 0.515,
+          "q3": 0.77,
+          "min": 0.32,
+          "max": 0.83
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 109.584,
+          "median": 104.348,
+          "q1": 80.272,
+          "q3": 136.278,
+          "min": 56.196,
+          "max": 168.208
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 3.667,
+          "median": 4,
+          "q1": 3.5,
+          "q3": 4,
+          "min": 3,
+          "max": 4
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 15.667,
+          "median": 18,
+          "q1": 14.5,
+          "q3": 18,
+          "min": 11,
+          "max": 18
+        }
+      }
+    },
+    "grok-build/subagents-enabled/heavy-independent-packages": {
+      "harness": "grok-build",
+      "architecture": "subagents-enabled",
+      "task": "heavy-independent-packages",
+      "model": "grok-4.6",
+      "n": 3,
+      "dispositionCounts": {
+        "provider-blocked": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 8.667,
+          "median": 2,
+          "q1": 2,
+          "q3": 12,
+          "min": 2,
+          "max": 22
+        },
+        "total": {
+          "n": 3,
+          "mean": 24,
+          "median": 24,
+          "q1": 24,
+          "q3": 24,
+          "min": 24,
+          "max": 24
+        },
+        "fraction": 0.3611
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "peakProcessRssBytes": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "totalCpuSeconds": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "wallSeconds": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "peakProcesses": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "peakThreads": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "grok-build/subagents-enabled/light-maintenance": {
+      "harness": "grok-build",
+      "architecture": "subagents-enabled",
+      "task": "light-maintenance",
+      "model": "grok-4.6",
+      "n": 3,
+      "dispositionCounts": {
+        "provider-blocked": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 1,
+          "median": 1,
+          "q1": 1,
+          "q3": 1,
+          "min": 1,
+          "max": 1
+        },
+        "total": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "fraction": 0.125
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "peakProcessRssBytes": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "totalCpuSeconds": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "wallSeconds": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "peakProcesses": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "peakThreads": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "grok-build/solo/heavy-independent-packages": {
+      "harness": "grok-build",
+      "architecture": "solo",
+      "task": "heavy-independent-packages",
+      "model": "grok-4.6",
+      "n": 3,
+      "dispositionCounts": {
+        "provider-blocked": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 2,
+          "median": 2,
+          "q1": 2,
+          "q3": 2,
+          "min": 2,
+          "max": 2
+        },
+        "total": {
+          "n": 3,
+          "mean": 24,
+          "median": 24,
+          "q1": 24,
+          "q3": 24,
+          "min": 24,
+          "max": 24
+        },
+        "fraction": 0.0833
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "peakProcessRssBytes": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "totalCpuSeconds": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "wallSeconds": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "peakProcesses": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        },
+        "peakThreads": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "grok-build/solo/light-maintenance": {
+      "harness": "grok-build",
+      "architecture": "solo",
+      "task": "light-maintenance",
+      "model": "grok-4.6",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 1,
+        "provider-blocked": 2
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 3.333,
+          "median": 1,
+          "q1": 1,
+          "q3": 4.5,
+          "min": 1,
+          "max": 8
+        },
+        "total": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "fraction": 0.4167
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 1,
+          "mean": 175910912,
+          "median": 175910912,
+          "q1": 175910912,
+          "q3": 175910912,
+          "min": 175910912,
+          "max": 175910912
+        },
+        "peakProcessRssBytes": {
+          "n": 1,
+          "mean": 127463424,
+          "median": 127463424,
+          "q1": 127463424,
+          "q3": 127463424,
+          "min": 127463424,
+          "max": 127463424
+        },
+        "totalCpuSeconds": {
+          "n": 1,
+          "mean": 1.44,
+          "median": 1.44,
+          "q1": 1.44,
+          "q3": 1.44,
+          "min": 1.44,
+          "max": 1.44
+        },
+        "wallSeconds": {
+          "n": 1,
+          "mean": 36.999,
+          "median": 36.999,
+          "q1": 36.999,
+          "q3": 36.999,
+          "min": 36.999,
+          "max": 36.999
+        },
+        "peakProcesses": {
+          "n": 1,
+          "mean": 4,
+          "median": 4,
+          "q1": 4,
+          "q3": 4,
+          "min": 4,
+          "max": 4
+        },
+        "peakThreads": {
+          "n": 1,
+          "mean": 64,
+          "median": 64,
+          "q1": 64,
+          "q3": 64,
+          "min": 64,
+          "max": 64
+        }
+      }
+    },
+    "opencode/bounded-subagents/heavy-independent-packages": {
+      "harness": "opencode",
+      "architecture": "bounded-subagents",
+      "task": "heavy-independent-packages",
+      "model": "openai/gpt-5.6-luna",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 22.667,
+          "median": 23,
+          "q1": 22.5,
+          "q3": 23,
+          "min": 22,
+          "max": 23
+        },
+        "total": {
+          "n": 3,
+          "mean": 24,
+          "median": 24,
+          "q1": 24,
+          "q3": 24,
+          "min": 24,
+          "max": 24
+        },
+        "fraction": 0.9444
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 794034176,
+          "median": 783777792,
+          "q1": 773302272,
+          "q3": 809637888,
+          "min": 762826752,
+          "max": 835497984
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 674355882.667,
+          "median": 655257600,
+          "q1": 647055360,
+          "q3": 692107264,
+          "min": 638853120,
+          "max": 728956928
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 66.31,
+          "median": 67.26,
+          "q1": 65.43,
+          "q3": 67.665,
+          "min": 63.6,
+          "max": 68.07
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 947.022,
+          "median": 957.549,
+          "q1": 915.441,
+          "q3": 983.866,
+          "min": 873.334,
+          "max": 1010.183
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 7.5,
+          "q3": 8.5,
+          "min": 7,
+          "max": 9
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 58.333,
+          "median": 56,
+          "q1": 53.5,
+          "q3": 62,
+          "min": 51,
+          "max": 68
+        }
+      }
+    },
+    "opencode/bounded-subagents/light-maintenance": {
+      "harness": "opencode",
+      "architecture": "bounded-subagents",
+      "task": "light-maintenance",
+      "model": "openai/gpt-5.6-luna",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "total": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "fraction": 1
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 692987221.333,
+          "median": 692695040,
+          "q1": 675733504,
+          "q3": 710094848,
+          "min": 658771968,
+          "max": 727494656
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 658187605.333,
+          "median": 658771968,
+          "q1": 650006528,
+          "q3": 666660864,
+          "min": 641241088,
+          "max": 674549760
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 19.683,
+          "median": 19.72,
+          "q1": 19.375,
+          "q3": 20.01,
+          "min": 19.03,
+          "max": 20.3
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 70.968,
+          "median": 67.06,
+          "q1": 63.347,
+          "q3": 76.635,
+          "min": 59.634,
+          "max": 86.211
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 3,
+          "median": 3,
+          "q1": 3,
+          "q3": 3,
+          "min": 3,
+          "max": 3
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 33.333,
+          "median": 33,
+          "q1": 33,
+          "q3": 33.5,
+          "min": 33,
+          "max": 34
+        }
+      }
+    },
+    "opencode/solo/heavy-independent-packages": {
+      "harness": "opencode",
+      "architecture": "solo",
+      "task": "heavy-independent-packages",
+      "model": "openai/gpt-5.6-luna",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 22,
+          "median": 22,
+          "q1": 22,
+          "q3": 22,
+          "min": 22,
+          "max": 22
+        },
+        "total": {
+          "n": 3,
+          "mean": 24,
+          "median": 24,
+          "q1": 24,
+          "q3": 24,
+          "min": 24,
+          "max": 24
+        },
+        "fraction": 0.9167
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 894728874.667,
+          "median": 899551232,
+          "q1": 890804224,
+          "q3": 901064704,
+          "min": 882057216,
+          "max": 902578176
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 703822506.667,
+          "median": 716648448,
+          "q1": 686948352,
+          "q3": 727109632,
+          "min": 657248256,
+          "max": 737570816
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 50.157,
+          "median": 49.52,
+          "q1": 47.49,
+          "q3": 52.505,
+          "min": 45.46,
+          "max": 55.49
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 776.593,
+          "median": 836.478,
+          "q1": 740.287,
+          "q3": 842.842,
+          "min": 644.096,
+          "max": 849.206
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 9.333,
+          "median": 9,
+          "q1": 9,
+          "q3": 9.5,
+          "min": 9,
+          "max": 10
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 70.667,
+          "median": 70,
+          "q1": 69.5,
+          "q3": 71.5,
+          "min": 69,
+          "max": 73
+        }
+      }
+    },
+    "opencode/solo/light-maintenance": {
+      "harness": "opencode",
+      "architecture": "solo",
+      "task": "light-maintenance",
+      "model": "openai/gpt-5.6-luna",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "total": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "fraction": 1
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 720870058.667,
+          "median": 742756352,
+          "q1": 695568384,
+          "q3": 757114880,
+          "min": 648380416,
+          "max": 771473408
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 694327978.667,
+          "median": 714563584,
+          "q1": 670113792,
+          "q3": 728659968,
+          "min": 625664000,
+          "max": 742756352
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 19.677,
+          "median": 19.57,
+          "q1": 18.98,
+          "q3": 20.32,
+          "min": 18.39,
+          "max": 21.07
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 83.657,
+          "median": 80.963,
+          "q1": 74.642,
+          "q3": 91.325,
+          "min": 68.321,
+          "max": 101.687
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 3.333,
+          "median": 3,
+          "q1": 2.5,
+          "q3": 4,
+          "min": 2,
+          "max": 5
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 35.667,
+          "median": 34,
+          "q1": 30.5,
+          "q3": 40,
+          "min": 27,
+          "max": 46
+        }
+      }
+    },
+    "pi/bounded-subagents/heavy-independent-packages": {
+      "harness": "pi",
+      "architecture": "bounded-subagents",
+      "task": "heavy-independent-packages",
+      "model": "gpt-5.6-luna",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 22.667,
+          "median": 23,
+          "q1": 22.5,
+          "q3": 23,
+          "min": 22,
+          "max": 23
+        },
+        "total": {
+          "n": 3,
+          "mean": 24,
+          "median": 24,
+          "q1": 24,
+          "q3": 24,
+          "min": 24,
+          "max": 24
+        },
+        "fraction": 0.9444
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 743321600,
+          "median": 739295232,
+          "q1": 738240512,
+          "q3": 746389504,
+          "min": 737185792,
+          "max": 753483776
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 198519466.667,
+          "median": 190414848,
+          "q1": 190033920,
+          "q3": 202952704,
+          "min": 189652992,
+          "max": 215490560
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 43.763,
+          "median": 43.57,
+          "q1": 42.835,
+          "q3": 44.595,
+          "min": 42.1,
+          "max": 45.62
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 1220.251,
+          "median": 1117.418,
+          "q1": 1108.097,
+          "q3": 1280.989,
+          "min": 1098.776,
+          "max": 1444.559
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 9.667,
+          "median": 10,
+          "q1": 9,
+          "q3": 10.5,
+          "min": 8,
+          "max": 11
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 72.667,
+          "median": 72,
+          "q1": 71,
+          "q3": 74,
+          "min": 70,
+          "max": 76
+        }
+      }
+    },
+    "pi/bounded-subagents/light-maintenance": {
+      "harness": "pi",
+      "architecture": "bounded-subagents",
+      "task": "light-maintenance",
+      "model": "gpt-5.6-luna",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "total": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "fraction": 1
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 202827093.333,
+          "median": 202788864,
+          "q1": 192559104,
+          "q3": 213075968,
+          "min": 182329344,
+          "max": 223363072
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 176401066.667,
+          "median": 175087616,
+          "q1": 175069184,
+          "q3": 177076224,
+          "min": 175050752,
+          "max": 179064832
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 4,
+          "median": 4.03,
+          "q1": 3.96,
+          "q3": 4.055,
+          "min": 3.89,
+          "max": 4.08
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 54.101,
+          "median": 57.845,
+          "q1": 52.197,
+          "q3": 57.877,
+          "min": 46.549,
+          "max": 57.909
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 3,
+          "median": 3,
+          "q1": 3,
+          "q3": 3,
+          "min": 3,
+          "max": 3
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 27.667,
+          "median": 28,
+          "q1": 27.5,
+          "q3": 28,
+          "min": 27,
+          "max": 28
+        }
+      }
+    },
+    "pi/solo/heavy-independent-packages": {
+      "harness": "pi",
+      "architecture": "solo",
+      "task": "heavy-independent-packages",
+      "model": "gpt-5.6-luna",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 22,
+          "median": 22,
+          "q1": 22,
+          "q3": 22,
+          "min": 22,
+          "max": 22
+        },
+        "total": {
+          "n": 3,
+          "mean": 24,
+          "median": 24,
+          "q1": 24,
+          "q3": 24,
+          "min": 24,
+          "max": 24
+        },
+        "fraction": 0.9167
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 515807914.667,
+          "median": 535842816,
+          "q1": 504518656,
+          "q3": 537114624,
+          "min": 473194496,
+          "max": 538386432
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 192817834.667,
+          "median": 187797504,
+          "q1": 181987328,
+          "q3": 201138176,
+          "min": 176177152,
+          "max": 214478848
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 18.58,
+          "median": 18.86,
+          "q1": 18.08,
+          "q3": 19.22,
+          "min": 17.3,
+          "max": 19.58
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 1080.587,
+          "median": 1047.458,
+          "q1": 1037.364,
+          "q3": 1107.245,
+          "min": 1027.27,
+          "max": 1167.032
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 9,
+          "median": 9,
+          "q1": 9,
+          "q3": 9,
+          "min": 9,
+          "max": 9
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 64.333,
+          "median": 65,
+          "q1": 64,
+          "q3": 65,
+          "min": 63,
+          "max": 65
+        }
+      }
+    },
+    "pi/solo/light-maintenance": {
+      "harness": "pi",
+      "architecture": "solo",
+      "task": "light-maintenance",
+      "model": "gpt-5.6-luna",
+      "n": 3,
+      "dispositionCounts": {
+        "completed": 3
+      },
+      "score": {
+        "passed": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "total": {
+          "n": 3,
+          "mean": 8,
+          "median": 8,
+          "q1": 8,
+          "q3": 8,
+          "min": 8,
+          "max": 8
+        },
+        "fraction": 1
+      },
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 244270421.333,
+          "median": 240590848,
+          "q1": 235829248,
+          "q3": 250871808,
+          "min": 231067648,
+          "max": 261152768
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 192268970.667,
+          "median": 188796928,
+          "q1": 183902208,
+          "q3": 198899712,
+          "min": 179007488,
+          "max": 209002496
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 3.83,
+          "median": 3.7,
+          "q1": 3.67,
+          "q3": 3.925,
+          "min": 3.64,
+          "max": 4.15
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 54.776,
+          "median": 52.631,
+          "q1": 51.016,
+          "q3": 57.464,
+          "min": 49.402,
+          "max": 62.296
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 2.333,
+          "median": 2,
+          "q1": 2,
+          "q3": 2.5,
+          "min": 2,
+          "max": 3
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 23.333,
+          "median": 21,
+          "q1": 21,
+          "q3": 24.5,
+          "min": 21,
+          "max": 28
+        }
+      }
+    }
+  },
+  "comparableLunaSolo": {
+    "codex/heavy-independent-packages": {
+      "harness": "codex",
+      "task": "heavy-independent-packages",
+      "modelClass": "gpt-5.6-luna-max",
+      "n": 3,
+      "scoreComplete": 0,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 644796416,
+          "median": 608858112,
+          "q1": 608761856,
+          "q3": 662861824,
+          "min": 608665600,
+          "max": 716865536
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 193769472,
+          "median": 194072576,
+          "q1": 192983040,
+          "q3": 194707456,
+          "min": 191893504,
+          "max": 195342336
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 12.96,
+          "median": 12.92,
+          "q1": 12.48,
+          "q3": 13.42,
+          "min": 12.04,
+          "max": 13.92
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 851.842,
+          "median": 851.748,
+          "q1": 825.482,
+          "q3": 878.156,
+          "min": 799.215,
+          "max": 904.564
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 20.333,
+          "median": 21,
+          "q1": 19.5,
+          "q3": 21.5,
+          "min": 18,
+          "max": 22
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 91.667,
+          "median": 96,
+          "q1": 89.5,
+          "q3": 96,
+          "min": 83,
+          "max": 96
+        }
+      }
+    },
+    "codex/light-maintenance": {
+      "harness": "codex",
+      "task": "light-maintenance",
+      "modelClass": "gpt-5.6-luna-max",
+      "n": 3,
+      "scoreComplete": 3,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 432704170.667,
+          "median": 441094144,
+          "q1": 425631744,
+          "q3": 443971584,
+          "min": 410169344,
+          "max": 446849024
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 193239722.667,
+          "median": 193146880,
+          "q1": 191688704,
+          "q3": 194744320,
+          "min": 190230528,
+          "max": 196341760
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 4.777,
+          "median": 4.79,
+          "q1": 4.51,
+          "q3": 5.05,
+          "min": 4.23,
+          "max": 5.31
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 78.531,
+          "median": 72.712,
+          "q1": 68.846,
+          "q3": 85.307,
+          "min": 64.98,
+          "max": 97.902
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 10.333,
+          "median": 10,
+          "q1": 9.5,
+          "q3": 11,
+          "min": 9,
+          "max": 12
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 70.667,
+          "median": 70,
+          "q1": 67.5,
+          "q3": 73.5,
+          "min": 65,
+          "max": 77
+        }
+      }
+    },
+    "cursor/heavy-independent-packages": {
+      "harness": "cursor",
+      "task": "heavy-independent-packages",
+      "modelClass": "gpt-5.6-luna-max",
+      "n": 3,
+      "scoreComplete": 0,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 591440554.667,
+          "median": 564965376,
+          "q1": 554745856,
+          "q3": 614897664,
+          "min": 544526336,
+          "max": 664829952
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 278669994.667,
+          "median": 273670144,
+          "q1": 273162240,
+          "q3": 281677824,
+          "min": 272654336,
+          "max": 289685504
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 18.683,
+          "median": 18.53,
+          "q1": 17.95,
+          "q3": 19.34,
+          "min": 17.37,
+          "max": 20.15
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 482.857,
+          "median": 458.349,
+          "q1": 435.349,
+          "q3": 518.111,
+          "min": 412.348,
+          "max": 577.873
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 11.333,
+          "median": 11,
+          "q1": 10,
+          "q3": 12.5,
+          "min": 9,
+          "max": 14
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 67.333,
+          "median": 71,
+          "q1": 64,
+          "q3": 72.5,
+          "min": 57,
+          "max": 74
+        }
+      }
+    },
+    "cursor/light-maintenance": {
+      "harness": "cursor",
+      "task": "light-maintenance",
+      "modelClass": "gpt-5.6-luna-max",
+      "n": 3,
+      "scoreComplete": 3,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 344612864,
+          "median": 363413504,
+          "q1": 333867008,
+          "q3": 364759040,
+          "min": 304320512,
+          "max": 366104576
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 273447594.667,
+          "median": 272723968,
+          "q1": 272474112,
+          "q3": 274059264,
+          "min": 272224256,
+          "max": 275394560
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 6.15,
+          "median": 6.23,
+          "q1": 6.095,
+          "q3": 6.245,
+          "min": 5.96,
+          "max": 6.26
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 58.968,
+          "median": 59.092,
+          "q1": 46.315,
+          "q3": 71.684,
+          "min": 33.538,
+          "max": 84.275
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 6,
+          "median": 6,
+          "q1": 6,
+          "q3": 6,
+          "min": 6,
+          "max": 6
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 30.667,
+          "median": 32,
+          "q1": 29.5,
+          "q3": 32.5,
+          "min": 27,
+          "max": 33
+        }
+      }
+    },
+    "opencode/heavy-independent-packages": {
+      "harness": "opencode",
+      "task": "heavy-independent-packages",
+      "modelClass": "gpt-5.6-luna-max",
+      "n": 3,
+      "scoreComplete": 0,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 894728874.667,
+          "median": 899551232,
+          "q1": 890804224,
+          "q3": 901064704,
+          "min": 882057216,
+          "max": 902578176
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 703822506.667,
+          "median": 716648448,
+          "q1": 686948352,
+          "q3": 727109632,
+          "min": 657248256,
+          "max": 737570816
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 50.157,
+          "median": 49.52,
+          "q1": 47.49,
+          "q3": 52.505,
+          "min": 45.46,
+          "max": 55.49
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 776.593,
+          "median": 836.478,
+          "q1": 740.287,
+          "q3": 842.842,
+          "min": 644.096,
+          "max": 849.206
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 9.333,
+          "median": 9,
+          "q1": 9,
+          "q3": 9.5,
+          "min": 9,
+          "max": 10
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 70.667,
+          "median": 70,
+          "q1": 69.5,
+          "q3": 71.5,
+          "min": 69,
+          "max": 73
+        }
+      }
+    },
+    "opencode/light-maintenance": {
+      "harness": "opencode",
+      "task": "light-maintenance",
+      "modelClass": "gpt-5.6-luna-max",
+      "n": 3,
+      "scoreComplete": 3,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 720870058.667,
+          "median": 742756352,
+          "q1": 695568384,
+          "q3": 757114880,
+          "min": 648380416,
+          "max": 771473408
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 694327978.667,
+          "median": 714563584,
+          "q1": 670113792,
+          "q3": 728659968,
+          "min": 625664000,
+          "max": 742756352
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 19.677,
+          "median": 19.57,
+          "q1": 18.98,
+          "q3": 20.32,
+          "min": 18.39,
+          "max": 21.07
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 83.657,
+          "median": 80.963,
+          "q1": 74.642,
+          "q3": 91.325,
+          "min": 68.321,
+          "max": 101.687
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 3.333,
+          "median": 3,
+          "q1": 2.5,
+          "q3": 4,
+          "min": 2,
+          "max": 5
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 35.667,
+          "median": 34,
+          "q1": 30.5,
+          "q3": 40,
+          "min": 27,
+          "max": 46
+        }
+      }
+    },
+    "pi/heavy-independent-packages": {
+      "harness": "pi",
+      "task": "heavy-independent-packages",
+      "modelClass": "gpt-5.6-luna-max",
+      "n": 3,
+      "scoreComplete": 0,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 515807914.667,
+          "median": 535842816,
+          "q1": 504518656,
+          "q3": 537114624,
+          "min": 473194496,
+          "max": 538386432
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 192817834.667,
+          "median": 187797504,
+          "q1": 181987328,
+          "q3": 201138176,
+          "min": 176177152,
+          "max": 214478848
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 18.58,
+          "median": 18.86,
+          "q1": 18.08,
+          "q3": 19.22,
+          "min": 17.3,
+          "max": 19.58
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 1080.587,
+          "median": 1047.458,
+          "q1": 1037.364,
+          "q3": 1107.245,
+          "min": 1027.27,
+          "max": 1167.032
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 9,
+          "median": 9,
+          "q1": 9,
+          "q3": 9,
+          "min": 9,
+          "max": 9
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 64.333,
+          "median": 65,
+          "q1": 64,
+          "q3": 65,
+          "min": 63,
+          "max": 65
+        }
+      }
+    },
+    "pi/light-maintenance": {
+      "harness": "pi",
+      "task": "light-maintenance",
+      "modelClass": "gpt-5.6-luna-max",
+      "n": 3,
+      "scoreComplete": 3,
+      "resources": {
+        "peakTreeRssBytes": {
+          "n": 3,
+          "mean": 244270421.333,
+          "median": 240590848,
+          "q1": 235829248,
+          "q3": 250871808,
+          "min": 231067648,
+          "max": 261152768
+        },
+        "peakProcessRssBytes": {
+          "n": 3,
+          "mean": 192268970.667,
+          "median": 188796928,
+          "q1": 183902208,
+          "q3": 198899712,
+          "min": 179007488,
+          "max": 209002496
+        },
+        "totalCpuSeconds": {
+          "n": 3,
+          "mean": 3.83,
+          "median": 3.7,
+          "q1": 3.67,
+          "q3": 3.925,
+          "min": 3.64,
+          "max": 4.15
+        },
+        "wallSeconds": {
+          "n": 3,
+          "mean": 54.776,
+          "median": 52.631,
+          "q1": 51.016,
+          "q3": 57.464,
+          "min": 49.402,
+          "max": 62.296
+        },
+        "peakProcesses": {
+          "n": 3,
+          "mean": 2.333,
+          "median": 2,
+          "q1": 2,
+          "q3": 2.5,
+          "min": 2,
+          "max": 3
+        },
+        "peakThreads": {
+          "n": 3,
+          "mean": 23.333,
+          "median": 21,
+          "q1": 21,
+          "q3": 24.5,
+          "min": 21,
+          "max": 28
+        }
+      }
+    }
+  },
+  "delegationDeltas": {
+    "opencode/light-maintenance": {
+      "soloN": 3,
+      "delegatedN": 3,
+      "peakTreeRssMedianRatio": 0.9326,
+      "cpuSecondsMedianRatio": 1.0077,
+      "wallSecondsMedianRatio": 0.8283
+    },
+    "codex/light-maintenance": {
+      "soloN": 3,
+      "delegatedN": 3,
+      "peakTreeRssMedianRatio": 1.007,
+      "cpuSecondsMedianRatio": 1.0334,
+      "wallSecondsMedianRatio": 1.2776
+    },
+    "cursor/light-maintenance": {
+      "soloN": 3,
+      "delegatedN": 3,
+      "peakTreeRssMedianRatio": 0.8558,
+      "cpuSecondsMedianRatio": 1.138,
+      "wallSecondsMedianRatio": 0.9111
+    },
+    "pi/light-maintenance": {
+      "soloN": 3,
+      "delegatedN": 3,
+      "peakTreeRssMedianRatio": 0.8429,
+      "cpuSecondsMedianRatio": 1.0892,
+      "wallSecondsMedianRatio": 1.0991
+    },
+    "opencode/heavy-independent-packages": {
+      "soloN": 3,
+      "delegatedN": 3,
+      "peakTreeRssMedianRatio": 0.8713,
+      "cpuSecondsMedianRatio": 1.3582,
+      "wallSecondsMedianRatio": 1.1447
+    },
+    "codex/heavy-independent-packages": {
+      "soloN": 3,
+      "delegatedN": 3,
+      "peakTreeRssMedianRatio": 1.1645,
+      "cpuSecondsMedianRatio": 2.4063,
+      "wallSecondsMedianRatio": 1.1732
+    },
+    "cursor/heavy-independent-packages": {
+      "soloN": 3,
+      "delegatedN": 3,
+      "peakTreeRssMedianRatio": 0.8984,
+      "cpuSecondsMedianRatio": 2.2213,
+      "wallSecondsMedianRatio": 1.3006
+    },
+    "pi/heavy-independent-packages": {
+      "soloN": 3,
+      "delegatedN": 3,
+      "peakTreeRssMedianRatio": 1.3797,
+      "cpuSecondsMedianRatio": 2.3102,
+      "wallSecondsMedianRatio": 1.0668
+    }
+  },
+  "startupWinners": {
+    "peakTreeRssBytes": {
+      "harness": "fx",
+      "value": 1470464
+    },
+    "totalCpuSeconds": {
+      "harness": "fx",
+      "value": 0
+    },
+    "wallSeconds": {
+      "harness": "fx",
+      "value": 0.21419138799997745
+    }
+  },
+  "interpretation": {
+    "startup": "The startup winner is the harness with the lowest median fresh-process metric; this does not measure an active agent session.",
+    "task": "Task resource comparisons are descriptive because model-provider behavior, tool use, delegation, and task completion differ. Luna-max solo comparisons are the closest matched task subset.",
+    "fx": "fx uses its native zai/glm-5.2 model and has no comparable delegation arm in this CLI version.",
+    "grok": "Grok Build task coverage is quota-censored after the initial successful request and is not used for stable repeated-task ranking."
+  }
+}

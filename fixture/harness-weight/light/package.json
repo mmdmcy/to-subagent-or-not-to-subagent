@@ -1,0 +1,8 @@
+{
+  "name": "harness-weight-light-task",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/public.test.js"
+  }
+}
