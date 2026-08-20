@@ -12,9 +12,10 @@
 \setlength{\parskip}{5pt}
 
 \title{\textbf{Measuring the Local Weight of Coding-Agent Harnesses}\\
-\large A controlled CPU, memory, and task-deployment comparison}
+\large A controlled CPU, memory, and task-deployment comparison\\
+\normalsize with an OpenRouter Grok 4.6 supplement}
 \author{mmdmcy\\Katteke}
-\date{19 August 2026}
+\date{20 August 2026}
 
 \begin{document}
 \maketitle
@@ -37,7 +38,10 @@ and Cursor finished that task fastest. No harness was best on every metric.
 These are narrow deployment measurements: task results include model/provider
 behavior and tool topology, while fx and Grok use native models rather than the
 matched Luna-max family. Grok task repetition was censored by its free usage
-quota, and fx timed out on all three heavyweight trials.
+quota, and fx timed out on all three heavyweight trials. A separate Grok Build
+supplement routed Grok 4.6 through OpenRouter: all 12 runs completed, with solo
+heavy medians of 220.4 MB peak RSS, 1.41 CPU seconds, 380.7 wall seconds, and
+23/24 hidden checks.
 \end{abstract}
 
 \section{Question and Estimands}
@@ -64,6 +68,13 @@ OpenCode used \texttt{openai/gpt-5.6-luna} with variant \texttt{max}; Codex used
 \texttt{--thinking max}. Grok Build used native Grok 4.6. fx used its native
 default \texttt{zai/glm-5.2}. The latter two are explicitly separate model
 exceptions rather than hidden claims of model equivalence.
+
+The model distinction matters even though all inference is remote. Different
+models can choose different numbers of turns, tool calls, subprocesses, and
+delegation patterns; those choices alter the measured local process tree. The
+Luna-max subset is therefore the closest harness comparison. The fx, native
+Grok, and OpenRouter Grok arms are valid deployment-system observations but not
+pure causal estimates of harness implementation overhead.
 
 The host was Linux x86-64 with four logical CPUs and approximately 15.5 GiB of
 RAM. Runs were sequential. Each task received a fresh fixture copy. The light
@@ -172,6 +183,40 @@ light solo task and one delegated heavy task before the free usage quota was
 exhausted; eleven later task attempts were provider-blocked. Grok is reported
 as a native-harness observation, not ranked against the repeated Luna arms.
 
+\section{OpenRouter Grok Supplement}
+
+To separate the native Grok Build quota from the harness, a post-hoc supplement
+configured Grok Build 1.0.5 with the OpenAI-compatible OpenRouter endpoint and
+model \texttt{x-ai/grok-4.6}. The API key was supplied only through an
+environment variable. The isolated config, aggregate results, and manifest do
+not contain the key. The task limit was increased from 1800 to 3600 seconds and
+the turn limit from 36 to 64 before these supplement outcomes were collected.
+
+\begin{center}
+\begin{tabular}{llrrrr}
+\toprule
+Architecture & Task & Peak RSS & CPU s & Wall s & Score \\
+\midrule
+Solo & Light & 213.9 MB & 0.54 & 27.0 & 8/8 \\
+Delegated & Light & 163.6 MB & 0.60 & 29.1 & 8/8 \\
+Solo & Heavy & 220.4 MB & 1.41 & 380.7 & 23/24 \\
+Delegated & Heavy & 307.7 MB & 6.92 & 692.6 & 23/24 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+All 12 planned supplement runs completed. This supports a practical conclusion:
+the earlier repeated-run failure was an xAI free-service quota limitation, not
+evidence that the open-source Grok Build harness could not perform the tasks.
+It does not make the supplement directly interchangeable with the Luna-max arms.
+The provider route, model, timeout, and turn budget differ, so the correct label
+is \emph{Grok Build with OpenRouter Grok 4.6}.
+
+Delegation was not beneficial on this heavy fixture in the supplement. Relative
+to solo medians, it used about 40\% more peak RSS, 391\% more CPU, and 82\% more
+wall time while retaining the same 23/24 median score. With three trials per
+cell, this is descriptive rather than a general conclusion about subagents.
+
 \section{Validity and Limitations}
 
 The design is valid for the narrow operational question of observed local
@@ -181,7 +226,11 @@ model efficiency. Limitations include one machine and service window, three
 task repetitions, cloud-provider behavior, a synthetic separable heavy fixture,
 no GPU or energy measurement, no persistent IDE-session measurement, unequal
 delegation implementations, and model exceptions for fx and Grok. The fixed
-process-tree instrumentation also cannot observe provider-side compute.
+process-tree instrumentation also cannot observe provider-side compute. The
+20-ms sampler can miss very short descendant processes; GNU \texttt{time}
+provides a startup fallback but not full descendant accounting for task runs.
+Task CPU should therefore be read as measured local CPU, potentially a lower
+bound for very short-lived children.
 
 The task pair is inspired by common coding-agent evaluation shapes but is not
 SWE-bench, Terminal-Bench, or another official benchmark. The report therefore
@@ -197,5 +246,13 @@ task, and Cursor completed that heavy task fastest. OpenCode was the heaviest
 local tree in this particular configuration. The appropriate engineering choice
 depends on whether memory, CPU, latency, task completion, or delegation
 capacity is the binding constraint.
+
+The OpenRouter supplement adds a strong operational result: Grok Build with
+OpenRouter Grok 4.6 completed every task cell with a small local process tree,
+and its solo heavy median was 220.4 MB RSS and 380.7 seconds at 23/24. It is the
+best observed heavy deployment in this dataset on those two endpoints, but not
+the winner of a model-controlled harness experiment. A future causal harness
+comparison should run the same OpenRouter model, endpoint, prompt, tool policy,
+timeout, and effort setting through every harness that supports it.
 
 \end{document}
